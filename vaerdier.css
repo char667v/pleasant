@@ -29,7 +29,6 @@ body {
   margin: 0px 0px 15px 15px;
 }
 
-/********NYT*******/
 .float_right {
   float: left;
   width: 200px;
@@ -38,6 +37,7 @@ body {
 .container {
   width: 100%;
   overflow: auto;
+  padding-bottom: 20px;
 }
 
 /*********FAQ*********/
@@ -60,31 +60,90 @@ body {
 
 /************black lines*******/
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-}
-
 .container_2 {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap to the next line */
   justify-content: space-around;
-  align-items: center;
   text-align: center;
-  padding: 1rem;
-  margin: 3rem;
 }
 
 .paragraph {
   flex: 1;
   width: 47%; /* Adjust the width based on your design */
-  padding: 20px;
-  background-color: #fff;
-  margin: 5px;
+  padding: 2px;
+  margin: 1px;
+  background-color: #d9d9d9;
 }
 
-/* Remove right border for the last paragraph */
-.paragraph:last-child {
-  border-right: none;
+.container img {
+  max-width: 60px;
+}
+
+@media only screen and (min-width: 601px) {
+  .container_2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .paragraph {
+    flex: 1;
+    width: 47%; /* Adjust the width based on your design */
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+/* Add some styles for the header */
+header {
+  background-color: #08408f;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style for h1 tag */
+h1 {
+  font-size: 3em;
+  color: #08408f;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 200;
+}
+
+/* Styling for .container */
+.container {
+  padding: 20px;
+}
+
+/* Style for images with float classes */
+.float_right,
+.float_left {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Add some styling for paragraphs */
+.container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Style for FAQ section */
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.faq-answer {
+  display: none;
+  margin-bottom: 10px;
 }
