@@ -157,10 +157,27 @@ h4 {
 }
 
 .faq-container {
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
-.faq_1-5 {
-  padding-right: 40px;
+.faq-column-divider_always {
+  border-right: 2px solid #000; /* Black color for the line */
+  padding-right: 10px; /* Adjust the padding based on your design */
+}
+
+@media only screen and (min-width: 701px) {
+  .faq-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .faq_1-5 {
+    padding-right: 40px;
+  }
+
+  /*********black lines********/
+  .faq-column-divider {
+    border-right: 2px solid #000; /* Black color for the line */
+    padding-right: 10px; /* Adjust the padding based on your design */
+  }
 }
