@@ -38,7 +38,7 @@ body {
 
 /*********FAQ*********/
 .faq-container {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ h1 {
 
 h2 {
   font-size: 2em;
-  text-align: center;
+  padding-left: 30px;
   padding-bottom: 20px;
 }
 
@@ -158,11 +158,31 @@ h4 {
 
 .faq-container {
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .faq-column-divider_always {
-  border-right: 2px solid #000; /* Black color for the line */
-  padding-right: 10px; /* Adjust the padding based on your design */
+  border-right: 2px solid #000;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 601px) {
+  .container_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .paragraph {
+    flex: 1;
+    width: 47%;
+    padding: 20px;
+    margin: 5px;
+  }
 }
 
 @media only screen and (min-width: 701px) {
@@ -172,12 +192,24 @@ h4 {
   }
 
   .faq_1-5 {
-    padding-right: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  /*********black lines********/
+  .faq_6-10 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Add styles for larger screens */
   .faq-column-divider {
-    border-right: 2px solid #000; /* Black color for the line */
-    padding-right: 10px; /* Adjust the padding based on your design */
+    border-right: 2px solid #000;
+    padding-right: 10px;
+  }
+
+  h2 {
+    font-size: 2em;
+    padding-left: 70px;
+    padding-bottom: 20px;
   }
 }
