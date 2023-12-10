@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.section_1 .grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section_2 .grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section_2 .grid_2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section_2 .grid_2-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
