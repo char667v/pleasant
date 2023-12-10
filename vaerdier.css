@@ -15,10 +15,6 @@ body {
   padding: 0;
 }
 
-.container_1 {
-  display: inline;
-}
-
 .img_timeglas {
   float: right;
   margin: 0px 0px 15px 15px;
@@ -113,6 +109,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 h4 {
   font-style: italic;
   font-weight: 200;
@@ -146,4 +148,19 @@ h4 {
 .faq-answer {
   display: none;
   margin-bottom: 10px;
+}
+
+.element1 {
+  background-color: #e0d8c3;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.faq_1-5 {
+  padding-right: 40px;
 }
