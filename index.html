@@ -7,8 +7,8 @@
     <!--for at google ikke "finder" sitet-->
     <meta name="robots" content="noindex">
     <!--links til stylesheet faelles og egen layout-->
-    <link rel="stylesheet" href="faelles_layout.css">
-    <link rel="stylesheet" href="egen_layout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forside.css">
     <!--google font-->
 
     <title>Forside</title>
@@ -17,36 +17,54 @@
 
 <body>
     <header>
+        <header>
+            <div class="slide-right">
+                <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
+            </div>
+            <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+            <div class="navbar" id="myNavbar">
+                <a href="index.html">
+                    <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
+                </a>
+                <a href="shop.html">Shop</a>
+                <a href="style.html">Style guide</a>
+                <a href="vaerdier.html">Værdier</a>
+                <a href="stories.html">Stories</a>
+                <!-- <a href="index.html">forside</a> -->
+            </div>
+        </header>
+
+
         <nav>
-            <div class="logo">
-                <a href="index.html"> <!-- ændre linkets navn -->
+            <!--  <div class="logo">
+                <a href="index.html"> < ændre linkets navn 
                     <img src="img/pleasant_logo.webp" alt="home botton">
                 </a>
-            </div>
+            </div> -->
             <!-- Search -->
             <section>
                 <form action="">
                     <input type="search" placeholder="">
                 </form>
             </section>
-            <!-- Simulate a smartphone / tablet -->
+            <!--    Simulate a smartphone / tablet 
             <div class="menu">
                 <div class="Menu"></div>
             </div>
             <div class="burger">
-                <div class="bar"></div><!--selve stregen overbollen-->
-                <div class="bar"></div><!--selve stregen midterbollen-->
-                <div class="bar"></div><!--selve stregen underbollen-->
+                <div class="bar"></div> selve stregen overbollen
+                <div class="bar"></div> selve stregen midterbollen
+                <div class="bar"></div> selve stregen underbollen
             </div>
             <ul>
-                <!-- Top Navigation Menu -->
+                Top Navigation Menu 
                 <li><a href="index.html"></a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="style_guide.html">Style guide</a></li>
                 <li><a href="stories.html">Stories</a></li>
                 <li><a href="vaerdier.html">Værdier</a></li>
-            </ul>
-        </nav>ggs
+            </ul> -->
+        </nav>
     </header>
     <!------------------------------------------------------------------------------->
     <main>
@@ -57,6 +75,8 @@
 
 
     </footer>
+    <script src="forside.js"></script>
+    <script>src = "faelles_javascript.js"</script>
     <script src="javascript/login.js"></script>
 </body>
 
