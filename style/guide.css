@@ -14,7 +14,7 @@ img {
   display: block;
 }
 body {
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 .divider {
@@ -27,10 +27,13 @@ body {
 }
 
 .section_2 .grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 10px;
 }
-.section_2 .grid_2-1 img {
+
+.section_2 .grid_2-1 .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
@@ -38,10 +41,24 @@ body {
 }
 
 .section_2 .grid_2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section_2 .grid_2-3 .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
 
 .section_2 .grid_2-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section_2 .grid_2-5 .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
 
