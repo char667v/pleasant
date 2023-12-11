@@ -9,6 +9,60 @@ img {
   width: 100%;
   height: auto;
   display: block;
+<<<<<<< HEAD
+  object-fit: cover;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/*************** <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>* 
+skal man indsætte til head så man kan se burgermenu icon*/
+
+/*****header-slide-tekst*****/
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+/***********overskrift*********/
+h1 {
+  font-size: 50px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 5vw;
+}
+p {
+  line-height: 40px;
+  font-size: 16px;
+  font-family: Playfair Display, serif;
+=======
+>>>>>>> 3103305b29049fe1acfdd10d25c0fb55ef32a2d1
 }
 /****** color definition ******/
 
@@ -119,8 +173,44 @@ nav li {
   margin: 10px 20px; /*hvordan linkene ligger i ".active kassen"*/
 }
 
+<<<<<<< HEAD
+/*html burgermenu*
+<header>
+        <div class="slide-right">
+            <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
+        </div>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="stories.html">
+                <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
+            </a>
+            <a href="/shop.html">Shop</a>
+            <a href="/style.html">Style guide</a>
+            <a href="/vaerdier.html">Værdier</a>
+            <a href="stories.html">Stories</a>
+            <a href="/index.html"></a>
+        </div>
+    </header>
+
+/**********footer***************/
+footer {
+  background-color: #172b85;
+  width: 100%;
+  height: auto;
+}
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  line-height: 25px;
+  padding: 4vw;
+  gap: 20px;
+=======
 /*************** main ****************/
 main {
   margin: 0 auto 0 auto;
   max-width: 1000px;
+>>>>>>> 3103305b29049fe1acfdd10d25c0fb55ef32a2d1
 }
