@@ -1,0 +1,271 @@
+/* shift+command+7 shortcut for making something a comment */
+/* shift+option+a shortcut for starting a comment */
+/***************Reset/****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+.logo {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.navbar a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
+footer {
+  background-color: #172b85;
+  width: 100%;
+  height: auto;
+}
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  line-height: 25px;
+  padding: 4vw;
+  gap: 20px;
+}
+.pleasant_footer img {
+  padding: 0;
+  align-items: first baseline;
+  display: flex;
+  width: 40%;
+  height: auto;
+  display: block;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  flex-flow: wrap;
+}
+.socialnet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 20%;
+  height: auto;
+  justify-content: flex-start;
+}
+.butik {
+  grid-column: 2/3;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.links {
+  grid-column: 3/4;
+  line-height: 35px;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.email {
+  grid-column: 4/5;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  place-items: center;
+  display: flex;
+}
+.footer_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.footer_bottom_left {
+  grid-column: 1/2;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  padding-left: 4vw;
+}
+.footer_bottom_right {
+  grid-column: 2/4;
+  padding-bottom: 30px;
+}
+.payment_icons {
+  display: flex;
+  grid-column: 3/4;
+  flex-direction: row;
+  width: 30%;
+  gap: 10px;
+  align-items: flex-end;
+  padding-left: 3vw;
+}
+.burger {
+  display: none;
+}
+/* @media (max-width: 812px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .navbar a:hover {
+    color: #ea4335; 
+  }
+  .logo {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 50px;
+    padding: 32px;
+    color: #373232;
+    font-size: 24px;
+  }
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/****** a ul links ******
+
+a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  /* z-index: 80px; 
+}
+
+ul {
+  list-style-type: none;
+}
+ */
+/*************** header ****************/
+/****** logo ******/
+.logo {
+  float: none;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/****** search ******/
+/* input[type="search"] {
+    float: right;
+    color: black;
+    margin-top: 2%;
+    width: 70px;
+    padding: 8px 20px 8px 45px;
+    border: #000 solid 2px;
+    font-size: 18px;
+    border-radius: 25px;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: 10px;
+    background-image: url(img/—Pngtree—search\ icon_4699282.png);
+    background-color: transparent;
+    transition: 0.5s all ease-in-out;
+    filter: brightness(170%);
+  }
+  
+  input[type="search"]:focus,
+  input[type="search"]:not(:placeholder-shown) {
+    width: 350px;
+    background-color: #fff;
+    filter: brightness(100%);
+  }*/
+/* input[type="search"]::placeholder {
+      color: black;
+    } */
+
+/****** burgermenu ******/
+/* .bar {
+      width: 30px; /*hvor lang stregen er
+      height: 3px; /*hvor tykt stregen er
+      background-color: #000000; /*farven på stregerne
+      margin: 4px;
+      transition: 0.4s; /*hvor hurtigt elementet åbner og lukker sig
+    }
+    .active {
+      background-color: #ac2d2d; /* OBS skal rettes 
+      max-width: fit-content;
+      margin-top: 13px; /*afstanden på ".active kassen" fra toppen af screen 
+      border-radius: 10px;
+    }
+    .burger {
+      display: flex;
+      flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt
+    }
+    nav ul {
+      display: none; /*Display er none da jeg gerne vil gemme elementet. (I denne opgave)
+      flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt
+      position: absolute; /*element ligger sig ovenpå alt uanset hvad 
+      top: 50px; /*afstanden på ".active kassen" fra toppen af screen 
+      left: 0;
+      width: 100%;
+    }
+    nav ul.active {
+      display: flex;
+    }
+    nav li {
+      margin: 10px 20px; /*hvordan linkene ligger i ".active kassen"
+    } */
+
+/*************** main ****************/
