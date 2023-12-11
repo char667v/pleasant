@@ -2,129 +2,147 @@
 <html lang="da">
 
 <head>
-    <title>Forside</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--For at google ikke finder sitet-->
     <meta name="robots" content="noindex">
+    <!--links til stylesheet og layout-->
     <link rel="stylesheet" href="forside.css">
-    <link rel="stylesheet" href="/index/forside_layout.css">
     <link rel="stylesheet" href="/faelles_layout.css">
+    <!--google font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <!--favicon/kan kun ses paa safari-->
+    <!--side title i top menu-->
     <title>Forside</title>
 
 </head>
+<!------------------------------------------------------------------------------->
 
 <body>
     <header>
-        <header>
-            <div class="slide-right">
-                <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
-            </div>
-            <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
-            <div class="navbar" id="myNavbar">
-                <a href="index.html">
-                    <div class="logo"><img src="/img/pleasant_logo.webp" alt="Logo"></div>
-                </a>
-                <a href="shop.html">Shop</a>
+        <div class="slide-right">
+            <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
+        </div>
+
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html">
+                <div class="logo"><img src="/img/pleasant_logo.webp" alt="Logo"></div>
+            </a>
+            <!-- <section>
+                <form action="">
+                    <input type="search" id="searchInput" placeholder="">
+                </form>
+            </section> -->
+            <div class="links">
+                <a href=" shop.html">Shop</a>
                 <a href="/style/style.html">Style guide</a>
                 <a href="/vaerdier/vaerdier.html">Værdier</a>
                 <a href="stories.html">Stories</a>
-                <!-- <a href="index.html">forside</a> -->
             </div>
-        </header>
-        <!------------------------------------------------------------------------------->
+            <!-- <a href="index.html">forside</a> -->
+        </div>
 
-        <nav>
-            <!--  <div class="logo">
-                <a href="index.html"> < ændre linkets navn 
-                    <img src="img/pleasant_logo.webp" alt="home botton">
-                </a>
-            </div> -->
-            <!-- Search -->
-            <!-- <section>
-                    <form action="">
-                        <input type="search" placeholder="">
-                    </form>
-                </section> -->
-            <!--    Simulate a smartphone / tablet 
-            <div class="menu">
-                <div class="Menu"></div>
-            </div>
-            <div class="burger">
-                <div class="bar"></div> selve stregen overbollen
-                <div class="bar"></div> selve stregen midterbollen
-                <div class="bar"></div> selve stregen underbollen
-            </div>
-            <ul>
-                Top Navigation Menu 
-                <li><a href="index.html"></a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="style_guide.html">Style guide</a></li>
-                <li><a href="stories.html">Stories</a></li>
-                <li><a href="vaerdier.html">Værdier</a></li>
-            </ul> -->
-        </nav>
     </header>
     <!------------------------------------------------------------------------------->
     <main>
-        <p>“Tøj med god samvittighed”</p>
+        <img src="/img/forside_billeder/gallery/sunset_longboard_1.jpg.webp" alt="surf"></img><!-- Erstat billed! -->
+        <div class="overskrift">
+            <h2>“Tøj med god samvittighed”</h2>
+        </div>
         <p>Vi har taget en sund beslutning om ikke længere at købe nyt tekstil. Det har vi ikke gjort siden 2021. Vi
             upcycler og laver tøj af genbrugstekstil. Det er en kæmpe miljøbesparelse, der giver os en god
             samvittighed
             vi gerne vil dele med dig.</p>
-        <img src="upcycled product" alt=""></img>
+        <div class="badge1">
+            <img src="/img/forside_billeder/badge_upcycle.png" alt=""></img>
+        </div>
         <!------------------------------------------------------------------------------->
-        <p>Shop all products</p> <!-- tilføj underline -->
+        <a href="/shop/shop.html" class="underline">Shop all products</a>
 
-        <img src="upcycled product" alt="Cali shirt"></img>
-        <p>Upcycled</p>
-        <p>Cali shirt</p>
-        <p>Madrid</p>
-        <p>Dkk. 695,00</p>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <p>Upcycled</p>
-        <p>Oahu shirt</p>
-        <p>Garden</p>
-        <p>Dkk. 645,00</p>
-        <img src="upcycled product" alt="T-shirt"></img>
-        <p>Eephant in the room</p>
-        <p>T-shirt</p>
-        <p>Off white</p>
-        <p>Dkk. 345,00</p>
-        <img src="upcycled product" alt="Will baby shirt"></img>
-        <dl>Upcycled</dl>
-        <dl>Will baby shirt</dl>
-        <dl>Multi</dl>
-        <dl>Dkk. 295,00</dl>
+        <Section class="shop">
+            <img src="/img//forside_billeder/shop/drop-51.webp" alt="Cali shirt"></img>
+            <img src="/img/forside_billeder/shop/Pleasant_upcycled_bali15.webp" alt="Oahu shirt"></img>
+            <img src="/img/forside_billeder/shop/Elephantwhite2.webp" alt="T-shirt"></img>
+            <img src="/img/forside_billeder/shop/will_upcycled_baby.webp" alt="Oahu shirt"></img>
+            <!-- Husk at tilføje nyt billed -->
+            <!-- <img src="/img/forside_billeder/shop/Pleasant_upcycled_bali15.webp" alt="Oahu shirt"></img> -->
+        </Section>
+        <div>
+            <h5>Upcycled</h5>
+            <p>Cali shirt</h4>
+            <h5>Madrid</h5>
+            <h5>Dkk. 695,00</h5>
+        </div>
+
+
+        <div>
+            <h5>Upcycled</h5>
+            <h4>Oahu shirt</h4>
+            <h5>Garden</h5>
+            <h5>Dkk. 645,00</h5>
+        </div>
+
+        <div>
+            <h5>Eephant in the room</h5>
+            <h4>T-shirt</h4>
+            <h5>Off white</h5>
+            <h5>Dkk. 345,00</h5>
+        </div>
+
+        <div>
+            <h5>Upcycled</h5>
+            <h4>Will baby shirt</h4>
+            <h5>Multi</h5>
+            <h5>Dkk. 295,00</h5>
+        </div>
+
+        <div>
+            <!------------------------------------------------------------------------------->
+            <img src="skiftnavn" alt="Surf dude"></img>
+            <!------------------------------------------------------------------------------->
+            <h3>Hvor finder du vores produkter?</h3>
+            <div class="logoer">
+                <img src="/img/forside_billeder/logoer/retailer_logo_1.svg" alt="Urban Outfitters"></img>
+                <img src="/img/forside_billeder/logoer/retailer_logo_7.svg" alt=""></img>
+                <img src="/img/forside_billeder/logoer/retailer_logo_5.svg" alt="Helly Hansen"></img>
+                <img src="/img/forside_billeder/logoer/retailer_logo_4.svg" alt="Art Monday"></img>
+                <img src="/img/forside_billeder/logoer/retailer_logo_6.svg" alt="West wind"></img>
+                <img src="/img/forside_billeder/logoer/retailer_logo_3.svg" alt="Lynæs"></img>
+            </div>
+        </div>
         <!------------------------------------------------------------------------------->
-        <img src="skiftnavn" alt="Surf dude"></img>
-        <!------------------------------------------------------------------------------->
-        <h3>Hvor finder du vores produkter?</h3>
-        <img src="/img/logoer/retailer_logo_1.svg" alt="">Urban Outfitters</img>
-        <img src="/img/logoer/retailer_logo_3.svg" alt="">Lynæs</img>
-        <img src="/img/logoer/retailer_logo_4.svg" alt="">Art Monday</img>
-        <img src="/img/logoer/retailer_logo_5.svg" alt="">Helly Hansen</img>
-        <img src="/img/logoer/retailer_logo_6.svg" alt="">West wind</img>
-        <img src="/img/logoer/retailer_logo_7.svg" alt=""></img>
+        <section class="grid_1-1"><!--parent-->
+            <div class="col"><!--child1-->
+                <img src="/img/forside_billeder/Gallery/IMG_0250.webp" alt="Butik Pleasant">
+            </div>
+            <div class="col"><!--child2-->
+                <h3>Hvorfor vælge Pleasant?</h3>
 
-        <!------------------------------------------------------------------------------->
-        <h3>Hvorfor vælge Pleasant?</h3>
-        <h4>Vi upcycler, cirkulerer og sælger vores produkter tidsløst.</h4>
-        <p>Upcycling betyder, at tage et eksisterende tekstilprodukt og lave det om til et nyt af højere værdi.
-            Dette
-            har nogle enorme miljø fordele:</p>
+                <h4>Vi upcycler, cirkulerer og sælger vores produkter tidsløst.</h4>
 
-        <!-- punktopstilling -->
-        <p>-Min. 4 gange lavere CO2 udledning
-            -Spar mindst 2.500 liter vand
-            -Du støtter ikke nye bomuldsproduktioner
-            -Du støtter indirekte humanitær velgørenhed</p>
+                <p>Upcycling betyder, at tage et eksisterende tekstilprodukt og lave det om til et nyt af højere
+                    værdi.
+                    Dette
+                    har nogle enorme miljø fordele:</p>
 
+                <!-- punktopstilling -->
+                <ul>
+                    <li>Min. 4 gange lavere CO2 udledning</li>
+                    <li>Spar mindst 2.500 liter vand</li>
+                    <li>Du støtter ikke nye bomuldsproduktioner</li>
+                    <li>Du støtter indirekte humanitær velgørenhed</li>
+                </ul>
+
+                <div><a href="/vaerdier/vaerdier.html" class="anden">Læs mere om upcycling</a></div>
+            </div>
+
+        </section>
         <!-- cta --><!-- husk at linke-->
         <p>Læs mere om upcycling</p>
         <!------------------------------------------------------------------------------->
@@ -183,89 +201,91 @@
             and enthusiasm once...</h5>
         <h6>READ MORE</h6>
         <!------------------------------------------------------------------------------->
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
-        <img src="upcycled product" alt="">Oahu shirt</img>
+
     </main>
+    <!------------------------------------------------------------------------------->
+    <section class="gallery">
+        <img class="billed1" src="/img/forside_billeder/gallery/1.JPG" alt=""></img>
+        <img class="billed2" src="/img/forside_billeder/gallery/2.JPG" alt=""></img>
+        <img class="billed3" src="/img/forside_billeder/gallery/3.jpg" alt=""></img>
+        <img class="billed4" src="/img/forside_billeder/gallery/4.JPG" alt=""></img>
+        <img class="billed5" src="/img/forside_billeder/gallery/5.JPG" alt=""></img>
+        <img class="billed6" src="/img/forside_billeder/gallery/6.JPG" alt=""></img>
+        <img class="billed7" src="/img/forside_billeder/gallery/7.jpg" alt=""></img>
+        <img class="billed8" src="/img/forside_billeder/gallery/8.JPG" alt=""></img>
+        <img class="billed9" src="/img/forside_billeder/gallery/9.JPG" alt=""></img>
+        <img class="billed10" src="/img/forside_billeder/gallery/10.JPG" alt=""></img>
+        <img class="billed11" src="/img/forside_billeder/gallery/11.JPG" alt=""></img>
+        <img class="billed12" src="/img/forside_billeder/gallery/12.JPG" alt=""></img>
+    </section>
+    <!------------------------------------------------------------------------------->
     <footer>
-        <footer>
-            <div class="wrap_footer">
-                <div class="footer_top">
-                    <div class="pleasant_footer">
-                        <img src="/img/stories_billeder/white_ver_logo.svg" alt="logo"><br>
-                        <div class="socialnet">
-                            <img src="/img/stories_billeder/facebook.svg" alt="facebook">
-                            <img src="/img/stories_billeder/instagram.svg" alt="instagram">
-                            <img src="/img/stories_billeder/pinterest.svg" alt="pinterest">
-                            <img src="/img/stories_billeder/youtube.svg" alt="youtube">
-                        </div> <br>
-                        Pleasant er et tøjprojekt med små fodaftryk og store drømme. Vi upcycler, cirkulerer og
-                        sælger vores
-                        produkter tidsløst. Vi værdsætter at gøre livet behageligt med et sundt forhold til hinanden
-                        og
-                        vores
-                        planet. <br><br> CVR-nr:42943274
-                    </div>
-                    <div class="butik">
-                        Store <br>
-                        Stefansgade 12, DK - 2200 Copenhagen <br>
-                        - <br>
-                        Open hours in December <br>
-                        Mon. Fri. 12AM - 6PM <br>
-                        Sat. Sun. 11AM - 5PM <br>
-                        - <br>
-                        info@pleasant.dk <br>Svartid 1-4 hverdage
-                    </div>
-                    <div class="links">
-                        Link <br>
-                        Kontakt <br>
-                        Styleguide <br>
-                        Forhandlerliste <br>
-                        Handelsbetingelser <br>
-                        Privatlivspolitik (GDPR)
-                    </div>
-                    <div class="email">
-                        <form action="/pleasant.dk">
-                            Pleasant Community <br>
-                            <label for="email">Enter your email:</label>
-                            <input type="email" id="email" name="email">
-                            <input type="submit">
-                        </form>
-                    </div>
+        <div class="wrap_footer">
+            <div class="footer_top">
+                <div class="pleasant_footer">
+                    <img src="/img/stories_billeder/white_ver_logo.svg" alt="logo"><br>
+                    <div class="socialnet">
+                        <img src="/img/stories_billeder/facebook.svg" alt="facebook">
+                        <img src="/img/stories_billeder/instagram.svg" alt="instagram">
+                        <img src="/img/stories_billeder/pinterest.svg" alt="pinterest">
+                        <img src="/img/stories_billeder/youtube.svg" alt="youtube">
+                    </div> <br>
+                    Pleasant er et tøjprojekt med små fodaftryk og store drømme. Vi upcycler, cirkulerer og
+                    sælger vores
+                    produkter tidsløst. Vi værdsætter at gøre livet behageligt med et sundt forhold til hinanden
+                    og
+                    vores
+                    planet. <br><br> CVR-nr:42943274
                 </div>
-                <div class="footer_bottom">
-                    <div class="footer_bottom_left">Copyright @ 2023, Pleasant. Rettigheder Se handelsbetingelser
-                    </div>
-                    <div class="footer_bottom_right">
-                        <div class="payment_icons"><img src="img/stories_billeder/Amex.svg" alt="Amex">
-                            <img src="/img/stories_billeder/GooglePay.svg" alt="GooglePay">
-                            <img src="/img/stories_billeder/ApplePay.svg" alt="ApplePay">
-                            <img src="/img/stories_billeder/Maestro.svg" alt="Maestro">
-                            <img src="/img/stories_billeder/Mastercard.svg" alt="Mastercard">
-                            <img src="/img/stories_billeder/PayPal.svg" alt="PayPal">
-                            <img src="/img/stories_billeder/ShopPay.svg" alt="ShopPay">
-                            <img src="/img/stories_billeder/UnionPay.svg" alt="UnionPay">
-                            <img src="/img/stories_billeder/Visa.svg" alt="Visa">
-                        </div>
+                <div class="butik">
+                    Store <br>
+                    Stefansgade 12, DK - 2200 Copenhagen <br>
+                    - <br>
+                    Open hours in December <br>
+                    Mon. Fri. 12AM - 6PM <br>
+                    Sat. Sun. 11AM - 5PM <br>
+                    - <br>
+                    info@pleasant.dk <br>Svartid 1-4 hverdage
+                </div>
+                <div class="links">
+                    Link <br>
+                    Kontakt <br>
+                    Styleguide <br>
+                    Forhandlerliste <br>
+                    Handelsbetingelser <br>
+                    Privatlivspolitik (GDPR)
+                </div>
+                <div class="email">
+                    <form action="/pleasant.dk">
+                        Pleasant Community <br>
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">Copyright @ 2023, Pleasant. Rettigheder Se handelsbetingelser
+                </div>
+                <div class="footer_bottom_right">
+                    <div class="payment_icons"><img src="img/stories_billeder/Amex.svg" alt="Amex">
+                        <img src="/img/stories_billeder/GooglePay.svg" alt="GooglePay">
+                        <img src="/img/stories_billeder/ApplePay.svg" alt="ApplePay">
+                        <img src="/img/stories_billeder/Maestro.svg" alt="Maestro">
+                        <img src="/img/stories_billeder/Mastercard.svg" alt="Mastercard">
+                        <img src="/img/stories_billeder/PayPal.svg" alt="PayPal">
+                        <img src="/img/stories_billeder/ShopPay.svg" alt="ShopPay">
+                        <img src="/img/stories_billeder/UnionPay.svg" alt="UnionPay">
+                        <img src="/img/stories_billeder/Visa.svg" alt="Visa">
                     </div>
                 </div>
             </div>
-        </footer>
-
-
-
-        <script src="forside.js"></script>
-        <script src="faelles_javascript.js"></script>
-        <script src="javascript/login.js"></script>
+        </div>
+    </footer>
+    <!------------------------------------------------------------------------------->
+    <script src="/index/forside.js"></script>
+    <script src="/faelles_javascript.js"></script>
+    <script src="javascript/login.js"></script>
 </body>
 
 </html>
