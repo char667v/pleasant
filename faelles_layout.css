@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* shift+command+7 shortcut for making something a comment */
 /* shift+option+a shortcut for starting a comment */
+=======
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 /***************Reset/****************/
 * {
   margin: 0;
@@ -17,6 +20,11 @@ main {
   max-width: 1200px;
   margin-inline: auto;
 }
+<<<<<<< HEAD
+=======
+
+/*****header-slide-tekst*****/
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .slide-right {
   width: 100%;
   overflow: hidden;
@@ -45,6 +53,57 @@ main {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+/***********overskrift*********/
+h1 {
+  font-size: 50px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 5vw;
+}
+p {
+  line-height: 40px;
+  font-size: 16px;
+  font-family: Playfair Display, serif;
+}
+/****** color definition ******/
+
+/****** Media query ******/
+@media (max-width: 812px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+/****** body ******/
+body {
+  background-color: #fff;
+  margin: 20px;
+  padding: 0;
+  /* font-family: ; */ /* HUSK AT TILFØJE */
+}
+@media (max-width: 812px) {
+}
+/****** a ul links ******/
+
+a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  /* z-index: 80px; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*************** header ****************/
+/****** logo ******/
+
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .logo {
   width: 10%;
   height: auto;
@@ -53,6 +112,41 @@ main {
   margin-right: auto;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+
+/****** search ******/
+input[type="search"] {
+  float: right;
+  color: black;
+  margin-top: 2%;
+  width: 70px;
+  padding: 8px 20px 8px 45px;
+  border: #000 solid 2px;
+  font-size: 18px;
+  border-radius: 25px;
+  background-position: 2% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 10px;
+  background-image: url(img/—Pngtree—search\ icon_4699282.png);
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+  filter: brightness(170%);
+}
+
+input[type="search"]:focus,
+input[type="search"]:not(:placeholder-shown) {
+  width: 350px;
+  background-color: #fff;
+  filter: brightness(100%);
+}
+/* input[type="search"]::placeholder {
+  color: black;
+} */
+
+/****** burgermenu ******/
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .navbar {
   width: 100%;
   height: auto;
@@ -73,6 +167,10 @@ main {
 a {
   text-decoration: none; /* Remove underline */
 }
+<<<<<<< HEAD
+=======
+/**********footer***************/
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 footer {
   background-color: #172b85;
   width: 100%;
@@ -88,6 +186,7 @@ footer {
   padding: 4vw;
   gap: 20px;
 }
+<<<<<<< HEAD
 .pleasant_footer img {
   padding: 0;
   align-items: first baseline;
@@ -269,3 +368,5 @@ ul {
     } */
 
 /*************** main ****************/
+=======
+>>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1

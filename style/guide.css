@@ -85,12 +85,21 @@ body {
   margin: 10px;
 }
 
+.section_3 .grid_3-2 .oahu_fold {
+  width: 400px;
+}
 .section_3 .grid_3-3 .oahu_materiale {
   margin: 10px;
 }
 .section_3 .grid_3-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #ebeced;
+  margin-top: 10px;
+}
+
+.section_3 .grid_3-3 .materiale_img {
+  width: 320px;
 }
 
 /*///////////////////*FOOTER*/
@@ -99,9 +108,8 @@ footer {
   width: 100%;
   height: auto;
 }
+
 .footer_top {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #efece2;
