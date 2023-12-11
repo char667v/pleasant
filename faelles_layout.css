@@ -4,11 +4,59 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-img {
+img,
+video {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/*****header-slide-tekst*****/
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+/***********overskrift*********/
+h1 {
+  font-size: 50px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  padding-top: 5vw;
+}
+p {
+  line-height: 40px;
+  font-size: 16px;
+  font-family: Playfair Display, serif;
 }
 /****** color definition ******/
 
@@ -17,10 +65,6 @@ img {
   nav ul {
     flex-direction: row;
   }
-}
-
-/****** Font ******/
-@font-face {
 }
 
 /****** body ******/
@@ -48,12 +92,14 @@ ul {
 
 /*************** header ****************/
 /****** logo ******/
+
 .logo {
-  float: none;
-  position: absolute;
-  top: 6%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
 }
 
 /****** search ******/
@@ -87,40 +133,39 @@ input[type="search"]:not(:placeholder-shown) {
 } */
 
 /****** burgermenu ******/
-.bar {
-  width: 30px; /*hvor lang stregen er*/
-  height: 3px; /*hvor tykt stregen er*/
-  background-color: #000000; /*farven på stregerne*/
-  margin: 4px;
-  transition: 0.4s; /*hvor hurtigt elementet åbner og lukker sig*/
-}
-.active {
-  background-color: #ac2d2d; /* OBS skal rettes */
-  max-width: fit-content;
-  margin-top: 13px; /*afstanden på ".active kassen" fra toppen af screen */
-  border-radius: 10px;
-}
-.burger {
-  display: flex;
-  flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt*/
-}
-nav ul {
-  display: none; /*Display er none da jeg gerne vil gemme elementet. (I denne opgave) */
-  flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt*/
-  position: absolute; /*element ligger sig ovenpå alt uanset hvad */
-  top: 50px; /*afstanden på ".active kassen" fra toppen af screen */
-  left: 0;
+.navbar {
   width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
 }
-nav ul.active {
-  display: flex;
+.navbar a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
 }
-nav li {
-  margin: 10px 20px; /*hvordan linkene ligger i ".active kassen"*/
+a {
+  text-decoration: none; /* Remove underline */
 }
-
-/*************** main ****************/
-main {
-  margin: 0 auto 0 auto;
-  max-width: 1000px;
+/**********footer***************/
+footer {
+  background-color: #172b85;
+  width: 100%;
+  height: auto;
+}
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  line-height: 25px;
+  padding: 4vw;
+  gap: 20px;
 }
