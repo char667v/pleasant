@@ -16,6 +16,9 @@ main {
   margin-inline: auto;
 }
 
+/*************** <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>* 
+skal man indsætte til head så man kan se burgermenu icon*/
+
 /*****header-slide-tekst*****/
 .slide-right {
   width: 100%;
@@ -153,6 +156,25 @@ input[type="search"]:not(:placeholder-shown) {
 a {
   text-decoration: none; /* Remove underline */
 }
+
+/*html burgermenu*
+<header>
+        <div class="slide-right">
+            <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
+        </div>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="stories.html">
+                <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
+            </a>
+            <a href="/shop.html">Shop</a>
+            <a href="/style.html">Style guide</a>
+            <a href="/vaerdier.html">Værdier</a>
+            <a href="stories.html">Stories</a>
+            <a href="/index.html"></a>
+        </div>
+    </header>
+
 /**********footer***************/
 footer {
   background-color: #172b85;
