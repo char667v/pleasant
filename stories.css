@@ -14,7 +14,6 @@ main {
   max-width: 1200px;
   margin-inline: auto;
 }
-
 .slide-right {
   width: 100%;
   overflow: hidden;
@@ -98,7 +97,7 @@ a {
   margin: 0px 20px 20px 0;
 }
 .categori a:hover {
-  color: #ea4335;
+  color: #0b5308;
 }
 .dropbtn {
   display: none;
@@ -697,7 +696,7 @@ iframe {
 @media (max-width: 800px) {
   .dropbtn {
     display: block;
-    background-color: #d85a10;
+    background-color: #6c5857;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -739,7 +738,7 @@ iframe {
   }
 
   .categori:hover .dropbtn {
-    background-color: #172b85;
+    background-color: #50bf97;
   }
 
   .navbar {
