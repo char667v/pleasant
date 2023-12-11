@@ -2,22 +2,62 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="boern.html">Børn</a>
-    <a href="kvinder.html">Kvinder</a>
-    <a href="maend.html">Mænd</a>
-    <a href="stories.html">Stories</a>
-    <a href="style.html">Style Guide</a>
+    <!--for at google ikke "finder" sitet-->
+    <meta name="robots" content="noindex">
+    <!--links til stylesheet faelles og egen layout-->
+    <link rel="stylesheet" href="faelles_layout.css">
+    <link rel="stylesheet" href="egen_layout.css">
+    <!--google font-->
 
-
-    <title>Index</title>
-
+    <title>Forside</title>
 </head>
+<!------------------------------------------------------------------------------->
 
 <body>
-    <H1>Velkommen</H1>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- ændre linkets navn -->
+                    <img src="img/pleasant_logo.webp" alt="home botton">
+                </a>
+            </div>
+            <!-- Search -->
+            <section>
+                <form action="">
+                    <input type="search" placeholder="">
+                </form>
+            </section>
+            <!-- Simulate a smartphone / tablet -->
+            <div class="menu">
+                <div class="Menu"></div>
+            </div>
+            <div class="burger">
+                <div class="bar"></div><!--selve stregen overbollen-->
+                <div class="bar"></div><!--selve stregen midterbollen-->
+                <div class="bar"></div><!--selve stregen underbollen-->
+            </div>
+            <ul>
+                <!-- Top Navigation Menu -->
+                <li><a href="index.html"></a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="style_guide.html">Style guide</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="vaerdier.html">Værdier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------------------------------------------------------------------------->
+    <main>
 
+
+    </main>
+    <footer>
+
+
+    </footer>
+    <script src="javascript/login.js"></script>
 </body>
 
 </html>
