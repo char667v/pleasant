@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /* shift+command+7 shortcut for making something a comment */
 /* shift+option+a shortcut for starting a comment */
-=======
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 /***************Reset/****************/
 * {
   margin: 0;
@@ -20,11 +17,8 @@ main {
   max-width: 1200px;
   margin-inline: auto;
 }
-<<<<<<< HEAD
-=======
 
 /*****header-slide-tekst*****/
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .slide-right {
   width: 100%;
   overflow: hidden;
@@ -53,8 +47,6 @@ main {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-=======
 
 /***********overskrift*********/
 h1 {
@@ -80,7 +72,7 @@ p {
 /****** body ******/
 body {
   background-color: #fff;
-  margin: 20px;
+  margin: 0px;
   padding: 0;
   /* font-family: ; */ /* HUSK AT TILFØJE */
 }
@@ -103,7 +95,6 @@ ul {
 /*************** header ****************/
 /****** logo ******/
 
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .logo {
   width: 10%;
   height: auto;
@@ -112,8 +103,6 @@ ul {
   margin-right: auto;
   padding-bottom: 10px;
 }
-<<<<<<< HEAD
-=======
 
 /****** search ******/
 input[type="search"] {
@@ -146,7 +135,6 @@ input[type="search"]:not(:placeholder-shown) {
 } */
 
 /****** burgermenu ******/
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 .navbar {
   width: 100%;
   height: auto;
@@ -167,10 +155,7 @@ input[type="search"]:not(:placeholder-shown) {
 a {
   text-decoration: none; /* Remove underline */
 }
-<<<<<<< HEAD
-=======
 /**********footer***************/
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
 footer {
   background-color: #172b85;
   width: 100%;
@@ -186,7 +171,6 @@ footer {
   padding: 4vw;
   gap: 20px;
 }
-<<<<<<< HEAD
 .pleasant_footer img {
   padding: 0;
   align-items: first baseline;
@@ -368,5 +352,3 @@ ul {
     } */
 
 /*************** main ****************/
-=======
->>>>>>> 92ba9c739b085a985cdcc840bf0efd53f8c2f3a1
