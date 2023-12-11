@@ -5,7 +5,11 @@
 }
 
 button {
-  margin: 10px;
+  margin: 20px;
+  padding: 5px;
+  background-color: #6c5857;
+  color: #fff;
+  border-radius: 5px;
 }
 
 img {
@@ -14,23 +18,32 @@ img {
   display: block;
 }
 body {
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 .divider {
   border-top: 1px solid #000;
   margin: 0 auto;
   width: 50%;
+  padding: 20px;
 }
 .section_1 .grid_1-2 {
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+.section_1 .grid_1-2 .velkommen {
+  padding-top: 50px;
+}
 .section_2 .grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 10px;
 }
-.section_2 .grid_2-1 img {
+
+.section_2 .grid_2-1 .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
@@ -38,10 +51,24 @@ body {
 }
 
 .section_2 .grid_2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section_2 .grid_2-3 .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
 
 .section_2 .grid_2-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section_2 .grid_2-5 .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
 
@@ -53,6 +80,13 @@ body {
 .section_3 .grid_3-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.section_3 .grid_3-2 .oahu_info {
+  margin: 10px;
+}
+
+.section_3 .grid_3-3 .oahu_materiale {
+  margin: 10px;
 }
 .section_3 .grid_3-3 {
   display: grid;
