@@ -5,11 +5,16 @@
 }
 
 button {
-  margin: 20px;
-  padding: 5px;
+  display: block;
   background-color: #6c5857;
-  color: #fff;
-  border-radius: 5px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
 }
 
 img {
@@ -36,6 +41,17 @@ body {
 .section_1 .grid_1-2 .velkommen {
   padding-top: 50px;
 }
+
+.section_1 .grid_1-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section_1 .grid_1-3 .buttons {
+  width: 450px;
+  grid-column: 2/3;
+}
+
 .section_2 .grid_2-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,6 +64,14 @@ body {
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
   height: auto;
+}
+.section_2 .grid_2-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section_2 .grid_2-2 .button1 {
+  grid-column: 2/3;
 }
 
 .section_2 .grid_2-3 {
@@ -74,9 +98,23 @@ body {
 
 .section_2 .grid_2-6 {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
+
+.section_2 .grid_2-6 .button3 {
+  grid-column: 2/3;
+}
+
+.section_3 .grid_3-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section_3 .grid_3-1 .buttons {
+  grid-column: 2/3;
+}
+
 .section_3 .grid_3-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -89,7 +127,8 @@ body {
   width: 400px;
 }
 .section_3 .grid_3-3 .oahu_materiale {
-  margin: 10px;
+  margin: 20px;
+  padding: 5px;
 }
 .section_3 .grid_3-3 {
   display: grid;
@@ -100,6 +139,10 @@ body {
 
 .section_3 .grid_3-3 .materiale_img {
   width: 320px;
+}
+
+.section_3 .grid_3-4 .stoerrelse {
+  margin: 20px;
 }
 
 /*///////////////////*FOOTER*/
@@ -177,4 +220,5 @@ footer {
 img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
