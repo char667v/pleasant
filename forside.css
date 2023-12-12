@@ -16,10 +16,20 @@ img {
 /******* header *******/
 
 /****** search ******/ /* nice to have */
-/* input[type="search"] {
-  float: right;
+
+.search-container {
+  position: absolute;
+  margin-top: -5%;
+  margin-right: 86%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="search"] {
   color: black;
-  margin-top: 2%;
   width: 70px;
   padding: 8px 20px 8px 45px;
   border: #000 solid 2px;
@@ -33,7 +43,6 @@ img {
   background-color: transparent;
   transition: 0.5s all ease-in-out;
   filter: brightness(170%);
-  margin-left: 600px;
 }
 
 input[type="search"]:focus,
@@ -41,7 +50,9 @@ input[type="search"]:not(:placeholder-shown) {
   width: 350px;
   background-color: #fff;
   filter: brightness(100%);
-} */
+  margin-top: -8%;
+  right: 0;
+}
 
 /****** body ******/
 body {
@@ -55,7 +66,7 @@ main {
 
 .navlinks {
   position: absolute;
-  margin-top: -3%;
+  margin-top: -3.8%;
   margin-left: 500px;
   color: #000000;
 }
@@ -80,11 +91,7 @@ main {
   color: #36b9a1;
   font-family: "plus jakarta sans";
 }
-.h1 {
-  font-weight: bold;
 
-  color: rgb(190, 216, 61) 191, 255, 0;
-}
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,13 +218,16 @@ dd {
   margin-left: 50px;
 }
 .col_2_1 .anden {
-  background-color: #ef936cb6;
+  /* background-color: #ef936cb6; */
+  background-color: #d9d9d9;
   border-radius: 5px;
   margin-left: 0px;
-  color: #715f5f;
+  /* color: #715f5f; */
+  color: #36b9a1;
+  position: absolute;
 }
 .anden {
-  margin-top: 2000px; /* Ændr denne værdi for at justere afstanden fra toppen */
+  margin-top: 57px; /* Ændr denne værdi for at justere afstanden fra toppen */
   margin-left: 50px; /* Ændr denne værdi for at justere afstanden fra venstre side */
 }
 
@@ -256,15 +266,13 @@ dd {
 }
 
 /************* 3 columns ***********/
-* {
-  box-sizing: border-box;
-}
 
 .grid_3-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 50px;
+  margin-bottom: 20px;
 }
 
 .col_3_1,
@@ -279,7 +287,7 @@ dd {
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
 }
 .billed1 {
   grid-column: 1/2;
