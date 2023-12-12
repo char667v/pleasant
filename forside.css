@@ -44,23 +44,46 @@ input[type="search"]:not(:placeholder-shown) {
 } */
 
 /****** body ******/
+body {
+  background-color: #f0efe9;
+}
 main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.navlinks {
+  position: absolute;
+  margin-top: -3%;
+  margin-left: 500px;
+  color: #000000;
+}
+/* a {
+  font-family: "plus jakarta sans";
+} */
 /***********top billed*********/
 .surfboards {
   display: flex;
+  margin-left: 100px;
 }
 .surfboards img {
   height: 500px;
-  width: 50%;
+  width: 46%;
+  padding: 0px 0px 16px 0px;
 }
 /***********overskrift*********/
-.title h2 {
+.title h1 {
   text-align: center;
+  font-size: 50px;
+  padding: 5vw;
   color: #36b9a1;
+  font-family: "plus jakarta sans";
+}
+.h1 {
+  font-weight: bold;
+
+  color: rgb(190, 216, 61) 191, 255, 0;
 }
 .section1 {
   display: grid;
@@ -77,13 +100,9 @@ main {
   height: 220px;
   margin-left: 223px;
 }
-h2 {
-  font-size: 50px;
-  /* font-family: "plus jakarta sans"; */
-  font-weight: bold;
-  padding: 5vw;
-}
+
 .grid1 p {
+  text-align: center;
   line-height: 25px;
   font-size: 16px;
   font-family: "plus jakarta sans";
@@ -94,53 +113,52 @@ h2 {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-a {
+.underline h5 {
   font-family: "plus jakarta sans";
 }
-/* shop */
-.shop1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 265px;
-  padding: 16px 0px 16px 0px;
-  gap: 50px;
-}
-.shoptekst1 {
+
+.shopgrid,
+.shopgrid2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
-.col {
-  /* margin-left: 20px; */
-  padding: 0px 0px 50px 0px; /*********** ret fejl *********/
+.shopgrid,
+.shopgrid2,
+img {
+  padding-bottom: 16px;
 }
-.shop2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 265px;
-  padding: 16px 0px 16px 0px;
+
+.shopgrid .col,
+.shopgrid2 .col {
+  width: 306px;
+  padding: 16px 16px 70px 0px;
   gap: 50px;
 }
-.shoptekst2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
 
-.col h5,
+.shopgrid h5,
 dd {
-  font-size: 15px;
+  font-size: 12px;
   font-family: "plus jakarta sans";
   color: #000000;
 }
-.col h4 {
+.shopgrid h4 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "plus jakarta sans";
+  color: #6c5857;
+}
+.shopgrid2 h5,
+dd {
+  font-size: 12px;
+  font-family: "plus jakarta sans";
+  color: #000000;
+}
+.shopgrid2 h4 {
   font-size: 20px;
   font-weight: bolder;
   font-family: "plus jakarta sans";
   color: #715f5f;
 }
-
 .surfer {
   align-items: center; /*********** ret fejl *********/
   height: max-content;
@@ -162,7 +180,8 @@ dd {
   width: 1210px;
   padding: 30px 30px 30px 30px;
   gap: 30px;
-  background-color: #715f5f;
+  /* background-color: #715f5f; */
+  background-color: #f4f4f3;
   background-size: cover;
 }
 .grid_1-1 {
@@ -330,7 +349,7 @@ h4 {
 
 .gallery img {
   height: 200px;
-  /*  width: 360px; */
-  object-fit: cover;
+  /*  width: 360px; 
+  object-fit: cover; */
   border: 2px solid grey; /* find en mere passende farve */
 }
