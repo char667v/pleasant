@@ -12,6 +12,7 @@ img {
   height: auto;
   display: block;
 }
+
 /************ header **************/
 
 /****** header li ******/
@@ -60,10 +61,7 @@ input[type="search"]:not(:placeholder-shown) {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.surfboards img {
-  height: 100%;
-  width: auto;
-}
+
 .overskrift {
   text-align: center;
   font-weight: bolder;
@@ -243,13 +241,52 @@ h4 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  max-width: 800px; /* Adjust the maximum width of the gallery */
-  margin: 0 auto;
+  grid-template-rows: 1fr 1fr;
+}
+.billed1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.billed2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.billed3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.billed4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.billed5 {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+.billed6 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.billed7 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.billed8 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.billed9 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.billed10 {
+  grid-column: 5/6;
+  grid-row: 2/3;
 }
 
 .gallery img {
   height: 279px;
-  width: 279px;
+  width: 360px;
   object-fit: cover;
   border: 2px solid grey; /* find en mere passende farve */
 }
