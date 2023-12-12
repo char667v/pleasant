@@ -230,12 +230,31 @@ h4 {
   width: 320px;
 }
 
-.section_3 .grid_3-4 {
-  height: 550px;
+@keyframes slideFrames {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+/* Apply the slide animation to the image container */
+.image-container {
+  display: flex;
+  overflow: hidden; /* Ensure images outside the container are hidden */
+}
+
+.image-container img {
+  height: 730px;
+  width: 100%; /* Ensure images fill the container */
+  animation: slideFrames 25s infinite; /* Adjust the duration as needed */
 }
 
 .section_3 .grid_3-4 .stoerrelse {
   margin: 20px;
+  grid-column: 3/4;
 }
 
 /*///////////////////*FOOTER*/
