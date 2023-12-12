@@ -13,7 +13,7 @@ img {
   display: block;
 }
 
-/************ header **************/
+/******* header *******/
 
 /****** search ******/ /* nice to have */
 /* input[type="search"] {
@@ -45,7 +45,7 @@ input[type="search"]:not(:placeholder-shown) {
 
 /****** body ******/
 body {
-  background-color: #f0efe9;
+  background-color: #f0efe9; /*********** ret fejl *********/
 }
 main {
   max-width: 1200px;
@@ -72,7 +72,7 @@ main {
   width: 46%;
   padding: 0px 0px 16px 0px;
 }
-/***********overskrift*********/
+/*********** overskrift *********/
 .title h1 {
   text-align: center;
   font-size: 50px;
@@ -162,10 +162,9 @@ dd {
 .surfer {
   align-items: center; /*********** ret fejl *********/
   height: max-content;
-  /* position: absolute; */
   padding: 30px;
 }
-/* forhandlere */
+/*** forhandlere ***/
 .tekst h3 {
   text-align: center;
   padding: 50px 0px 20px 0px;
@@ -173,7 +172,6 @@ dd {
   font-family: "plus jakarta sans";
 }
 .logoer {
-  /*********** ret fejl *********/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,19 +184,16 @@ dd {
 }
 .grid_1-1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
-  padding: 50px 0px 20px 50px;
+  padding: 100px 0px 60px 0px;
+  margin-left: 20px;
+  font-family: "plus jakarta sans";
 }
 .grid_1-1 img {
   /** stehan udenfor butik***/
-  width: 500px;
-  padding: 0px 0px 20px 50px;
-}
-
-.grid_2-1 img {
-  /** sweats på bøjle***/
-  width: 100%;
+  width: 550px;
+  padding: 0px 0px 20px 0px;
 }
 
 .col_2_1 h3 {
@@ -206,92 +201,80 @@ dd {
 }
 
 .col_2_1 p {
-  font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: left;
 }
 .col_2_1 li {
-  font-weight: bold;
   text-align: left;
   padding: 0 20px;
   list-style: circle;
+  margin-left: 50px;
 }
-h3 h4 {
-  font-weight: bold;
+.col_2_1 .anden {
+  background-color: #ef936cb6;
+  border-radius: 5px;
+  margin-left: 0px;
+  color: #715f5f;
 }
+.anden {
+  margin-top: 2000px; /* Ændr denne værdi for at justere afstanden fra toppen */
+  margin-left: 50px; /* Ændr denne værdi for at justere afstanden fra venstre side */
+}
+
 .grid_2-1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  /* padding: 20px; */
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0px 0px 50px 0px;
+  margin-left: 20px;
+  font-family: "plus jakarta sans";
 }
-.col_2_2 h3 {
-  font-size: 30px;
+.grid_2-1 img {
+  /** stehan udenfor butik***/
+  width: 550px;
+  height: 408px;
+  padding: 0px 0px 20px 0px;
+}
+
+.col_2_2 h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .col_2_2 p {
-  font-weight: bold;
+  /* line-height: 25px; */
   color: rgb(0, 0, 0);
   text-align: left;
 }
 
-h4 {
-  font-weight: bolder;
+.tekst2 h3 {
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+  font-size: 30px;
+  font-family: "plus jakarta sans";
 }
 
-.anden {
-  background-color: #ef936cb6;
-  border-radius: 5px;
-  margin-left: 10px;
-  color: #715f5f;
-}
 /************* 3 columns ***********/
 * {
   box-sizing: border-box;
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  /* padding: 0 8px; */
+.grid_3-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 50px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  /* padding: 0 8px; */
-  /* margin: 0 auto; Center the column horizontally */
+.col_3_1,
+.col_3_2,
+.col_3_3 img {
+  width: 400px;
+  height: 400px;
+  padding: 100px 0px 20px 0px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  height: 8%;
-}
-
-.column h5 {
-  font-size: 14px;
-  color: #000000;
-  margin-top: 8px;
-  width: 100%;
-}
-.column h2 {
-  font-size: 30px;
-  color: #000000;
-  margin-top: 8px;
-  width: 100%;
-}
-
-.column h6 {
-  font-size: 18px;
-  color: #000000;
-  margin-top: 8px;
-}
 /************* billed gallery ************/
 .gallery {
   display: grid;
@@ -349,7 +332,9 @@ h4 {
 
 .gallery img {
   height: 200px;
-  /*  width: 360px; 
-  object-fit: cover; */
+  /*  width: 360px; */
+  object-fit: cover;
   border: 2px solid grey; /* find en mere passende farve */
+  margin: 0; /* Tilføjet for at fjerne eventuelle marginer */
+  padding: 0; /* Tilføjet for at fjerne eventuelle padding */
 }
