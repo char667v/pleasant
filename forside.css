@@ -14,64 +14,13 @@ img {
 }
 /************ header **************/
 
-/***************Reset/****************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.links {
+  grid-column: 3/4;
+  line-height: 35px;
+  padding-top: 1vh;
+  padding-left: 1vh;
+  margin-left: 1090px; /* skal rettes til højre side */
 }
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-/****** color definition ******/
-
-/****** Media query ******/
-@media (max-width: 812px) {
-  nav ul {
-    flex-direction: row;
-  }
-}
-
-/****** Font ******/
-@font-face {
-}
-
-/****** body ******/
-body {
-  /* background-color: #cfb41b; */
-  margin: 20px;
-  padding: 0;
-  /* font-family: ; */ /* HUSK AT TILFØJE */
-}
-@media (max-width: 812px) {
-}
-/****** a ul links ******/
-
-a {
-  color: #000;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  /* z-index: 80px; */
-}
-
-ul {
-  list-style-type: none;
-}
-
-/*************** header ****************/
-/****** logo ******/
-.logo {
-  float: none;
-  position: absolute;
-  top: 6%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /****** search ******/
 input[type="search"] {
   float: right;
@@ -90,6 +39,7 @@ input[type="search"] {
   background-color: transparent;
   transition: 0.5s all ease-in-out;
   filter: brightness(170%);
+  margin-left: 600px;
 }
 
 input[type="search"]:focus,
@@ -98,45 +48,79 @@ input[type="search"]:not(:placeholder-shown) {
   background-color: #fff;
   filter: brightness(100%);
 }
-/* input[type="search"]::placeholder {
-    color: black;
-  } */
+/****** body ******/
+.overskrift {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 40px 20px 20px 20px;
+}
 
-/****** burgermenu ******/
-/* .bar {
-    width: 30px; /*hvor lang stregen er
-    height: 3px; /*hvor tykt stregen er
-    background-color: #000000; /*farven på stregerne
-    margin: 4px;
-    transition: 0.4s; /*hvor hurtigt elementet åbner og lukker sig
-  }
-  .active {
-    background-color: #ac2d2d; /* OBS skal rettes 
-    max-width: fit-content;
-    margin-top: 13px; /*afstanden på ".active kassen" fra toppen af screen 
-    border-radius: 10px;
-  }
-  .burger {
-    display: flex;
-    flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt
-  }
-  nav ul {
-    display: none; /*Display er none da jeg gerne vil gemme elementet. (I denne opgave)
-    flex-direction: column; /*element ligger i column da jeg gerne vil have at det åbnes verticalt
-    position: absolute; /*element ligger sig ovenpå alt uanset hvad 
-    top: 50px; /*afstanden på ".active kassen" fra toppen af screen 
-    left: 0;
-    width: 100%;
-  }
-  nav ul.active {
-    display: flex;
-  }
-  nav li {
-    margin: 10px 20px; /*hvordan linkene ligger i ".active kassen"
-  } */
+/****** main ******/
+/* main {
+  max-width: 1200px;
+  margin-inline: 180px; /* left and right margins simultaneously */
+} */
 
-/*************** main ****************/
-main {
-  margin: 0 auto 0 auto;
-  max-width: 1000px;
+/****** badge1 ******/
+.badge1 {
+  width: 200px;
+  height: 200px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.anden {
+  background-color: #ef936cb6;
+  margin-left: 10px;
+  color: #715f5f;
+}
+/* shop */
+.shop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 420px;
+  padding: 30px 30px 30px 0px;
+  gap: 30px;
+}
+.h4 .h5 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+/* forhandlere */
+.logoer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  padding: 30px 30px 30px 0px;
+  gap: 10px;
+  background-color: #715f5f;
+  background-size: cover;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+/* billed gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 800px; /* Adjust the maximum width of the gallery */
+  margin: 0 auto;
+}
+
+.gallery img {
+  height: 279px;
+  width: 279px;
+  object-fit: cover;
+  border: 2px solid grey; /* find en mere passende farve */
 }
