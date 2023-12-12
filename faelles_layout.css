@@ -60,13 +60,6 @@ p {
 }
 /****** color definition ******/
 
-/****** Media query ******/
-@media (max-width: 812px) {
-  nav ul {
-    flex-direction: row;
-  }
-}
-
 /****** body ******/
 body {
   background-color: #fff;
