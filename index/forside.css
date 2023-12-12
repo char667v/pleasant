@@ -14,15 +14,16 @@ img {
 }
 /************ header **************/
 
+/****** header li ******/
 .links {
   grid-column: 3/4;
   line-height: 35px;
   padding-top: 1vh;
   padding-left: 1vh;
-  margin-left: 1090px; /* skal rettes til højre side */
+  margin-left: -1250px; /* skal rettes til højre side */
 }
-/****** search ******/
-input[type="search"] {
+/****** search ******/ /* nice to have */
+/* input[type="search"] {
   float: right;
   color: black;
   margin-top: 2%;
@@ -47,25 +48,46 @@ input[type="search"]:not(:placeholder-shown) {
   width: 350px;
   background-color: #fff;
   filter: brightness(100%);
-}
-/****** body ******/
-.overskrift {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 40px;
-  padding: 40px 20px 20px 20px;
-}
+} */
 
+/****** body ******/
 /****** main ******/
 /* main {
   max-width: 1200px;
-  margin-inline: 180px; /* left and right margins simultaneously */
+  margin-inline: 180px; /* left and right margins simultaneously 
 } */
+.surfboards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.surfboards img {
+  height: 100%;
+  width: auto;
+}
+.overskrift {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
+  padding: 50px 20px 20px 20px;
+  margin-left: 500px;
+}
+p {
+  text-align: center;
+  /*  letter-spacing: -0.2px; ønkser smallere mellenrum hojsontalt */
+}
 
-/****** badge1 ******/
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+  margin-left: 500px;
+}
+
 .badge1 {
   width: 200px;
   height: 200px;
+  margin-left: 80px;
 }
 
 .underline {
@@ -79,7 +101,7 @@ input[type="search"]:not(:placeholder-shown) {
   color: #715f5f;
 }
 /* shop */
-.shop {
+.shop1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,13 +109,45 @@ input[type="search"]:not(:placeholder-shown) {
   padding: 30px 30px 30px 0px;
   gap: 30px;
 }
-.h4 .h5 {
+
+.shoptekst1 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 355px;
+}
+.col {
+  padding: 5px;
+  border: 1px solid #ccc; /* slet senere */
+}
+.shop2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 420px;
+  padding: 30px 30px 30px 0px;
+  gap: 30px;
+}
+.shoptekst2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 355px;
+}
+.col {
+  padding: 5px;
+  border: 1px solid #ccc; /* slet senere */
 }
 
+.surfer {
+  align-items: center;
+  height: max-content;
+  padding: 30px;
+}
 /* forhandlere */
+h3 {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
 .logoer {
   display: flex;
   justify-content: space-between;
@@ -105,10 +159,85 @@ input[type="search"]:not(:placeholder-shown) {
   background-size: cover;
 }
 
-h4 {
-  font-weight: bold;
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 20px;
+}
+.col_2_1 h3 {
+  font-size: 30px;
 }
 
+.col_2_1 p {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+.col_2_1 li {
+  font-weight: bold;
+  text-align: left;
+  padding: 0 20px;
+  list-style: circle;
+}
+h3 h4 {
+  font-weight: bold;
+}
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 20px;
+}
+.col_2_2 h3 {
+  font-size: 30px;
+}
+
+.col_2_2 p {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+/******** 3 columns **********/
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+  /* margin: 0 auto; Center the column horizontally */
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 8%;
+}
+
+.column p {
+  font-size: 14px;
+  color: #646155;
+  margin-top: 8px;
+  width: 100%;
+}
 /* billed gallery */
 
 .gallery {
