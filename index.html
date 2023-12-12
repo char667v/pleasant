@@ -9,13 +9,17 @@
     <!--links til stylesheet og layout-->
     <link rel="stylesheet" href="forside.css">
     <link rel="stylesheet" href="faelles_layout.css">
-    <!--google font-->
+    <!--faelles google font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
     <!--favicon/kan kun ses paa safari-->
     <!--side title i top menu-->
     <title>Forside</title>
@@ -32,29 +36,29 @@
         <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
         <div class="navbar" id="myNavbar">
             <a href="index.html">
-                <div class="logo"><img src="/img/pleasant_logo.webp" alt="Logo"></div>
+                <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
             </a>
             <!-- <section>
                 <form action="">
                     <input type="search" id="searchInput" placeholder="">
                 </form>
             </section> -->
-            <div class="links">
-                <a href=" shop.html">Shop</a>
-                <a href="/style/style.html">Style guide</a>
-                <a href="/vaerdier/vaerdier.html">Værdier</a>
-                <a href="stories.html">Stories</a>
-            </div>
+            <a href="kvinder.html">Shop</a>
+            <a href="style.html">Style guide</a>
+            <a href="vaerdier.html">Værdier</a>
+            <a href="stories.html">Stories</a>
         </div>
     </header>
+
     <!------------------------------------------------------------------------------->
 
     <div class="surfboards">
         <img src="/img/forside_billeder/gallery/sunset_longboard_1.webp" alt="surf">
         <img src="/img/forside_billeder/gallery/sunset_longboard_2.webp" alt="surf">
     </div>
+
     <main>
-        <div class="overskrift">
+        <div class="title">
             <h2>“Tøj med god samvittighed”</h2>
         </div>
         <section class="section1">
@@ -70,7 +74,7 @@
         </section>
 
         <!------------------------------------------------------------------------------->
-        <a href="/shop/shop.html" class="underline">Shop all products</a>
+        <a href="shop.html" class="underline">Shop all products</a>
 
         <section class="shop1">
             <img src="/img//forside_billeder/shop/drop-51.webp" alt="Cali shirt"></img>
@@ -158,7 +162,7 @@
             <img src="/img/forside_billeder/logoer/retailer_logo_6.svg" alt="West wind"></img>
             <img src="/img/forside_billeder/logoer/retailer_logo_3.svg" alt="Lynæs"></img>
         </div>
-        </div>
+
         <!------------------------------------------------------------------------------->
         <section class="grid_1-1">
             <div class="col_2_1">
@@ -177,7 +181,7 @@
                 <img src="/img/forside_billeder/img_0250.webp" alt="Butik Pleasant">
             </div>
 
-            <div><a href="/vaerdier/vaerdier.html" class="anden">Læs mere om upcycling</a></div>
+            <div><a href="vaerdier.html" class="anden">Læs mere om upcycling</a></div>
             </div>
         </section>
         <!------------------------------------------------------------------------------->
@@ -201,7 +205,7 @@
                 </p>
             </div>
         </section>
-        <!------------------------------------------------------------------------------->
+        <!---------------------------------- 3 COLUMNS--------------------------------------------->
         <h2>Explore our stories</h2>
         <section class="row">
             <div class="column">
@@ -216,21 +220,13 @@
                     enthusiasm and support.
                     Here are some photos
                     from the day....</h5>
-                <h6>READ MORE</h6>
+
+                <div><a href="stories_printevent.html" class="event">
+                        <h6>READ MORE</h6>
+                    </a></div>
+            </div>
             </div>
         </section>
-
-
-        <!-- <div class="row">
-            <div class="column">
-                <img src="imgswebp/side2_2/15_(2).webp" alt="Image 15" width="500" height="625">
-                <a href="infoside.html">
-                    <h2>The Bamboo Bungalow</h2>
-                </a>
-                <p class="image-text"> Explore cultural heritage sites from an eco-resort. Powered by renewable
-                    energy, this resort offers a responsible and eco-friendly stay that allows you to discover the
-                    region's rich cultural heritage while minimizing your environmental impact.</p>
- -->
         <!------------------------------>
 
         <div class="column">
@@ -268,7 +264,7 @@
         </div>
         </section>
     </main>
-    <!------------------------------------------------------------------------------->
+    <!----------------------------------BILLED GALLERY--------------------------------------------->
     <section class="gallery">
         <img class="billed1" src="/img/forside_billeder/gallery/1.JPG" alt=""></img>
         <img class="billed2" src="/img/forside_billeder/gallery/2.JPG" alt=""></img>
@@ -284,7 +280,7 @@
         <img class="billed12" src="/img/forside_billeder/gallery/12.JPG" alt=""></img>
     </section>
 
-    <!------------------------------------------------------------------------------->
+    <!------------------------------------FOOTER------------------------------------------->
     <footer>
         <div class="wrap_footer">
             <div class="footer_top">
@@ -349,8 +345,8 @@
         </div>
     </footer>
     <!------------------------------------------------------------------------------->
-    <script src="/index/forside.js"></script>
-    <script src="/faelles_javascript.js"></script>
+    <script src="index/forside.js"></script>
+    <script src="faelles_javascript.js"></script>
     <script src="javascript/login.js"></script>
 </body>
 
