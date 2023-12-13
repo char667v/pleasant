@@ -16,10 +16,9 @@ img {
 /******* header *******/
 
 /****** search ******/ /* nice to have */
-
 .search-container {
   position: absolute;
-  margin-top: -5%;
+  margin-top: 20%;
   margin-right: 86%;
 }
 
@@ -54,6 +53,67 @@ input[type="search"]:not(:placeholder-shown) {
   right: 0;
 }
 
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  z-index: 99;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.navbar {
+  height: 400px;
+}
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+.logo {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.navbar a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
 /****** body ******/
 body {
   background-color: #f0efe9; /*********** ret fejl *********/
@@ -64,10 +124,10 @@ main {
   margin-right: auto;
 }
 
-.navlinks {
-  position: absolute;
-  margin-top: -3.8%;
-  margin-left: 500px;
+.navbar {
+  /*   position: absolute; */
+  margin-top: -6.8%;
+  /* margin-left: 500px; */
   color: #000000;
 }
 /* a {
@@ -101,6 +161,7 @@ main {
 }
 .badge1 img {
   align-items: center; /*********** ret fejl *********/
+  padding: none;
 }
 .badge1 {
   width: 220px;
@@ -138,7 +199,7 @@ img {
 .shopgrid .col,
 .shopgrid2 .col {
   width: 306px;
-  padding: 16px 16px 70px 0px;
+  padding: 0px 16px 70px 0px;
   gap: 50px;
 }
 
@@ -281,7 +342,7 @@ dd {
 img {
   width: 380px;
   height: 25%;
-  padding: 50px 0px 20px 0px;
+  padding: 50px 0px 20px 0px; /* OBS denne padding påvirker resten af siden. hvvorfor gør det det??? */
 }
 
 .col_3_3 img {
@@ -367,4 +428,53 @@ h2 h5 h6 {
   border: 2px solid grey; /* find en mere passende farve */
   margin: 0; /* Tilføjet for at fjerne eventuelle marginer */
   padding: 0; /* Tilføjet for at fjerne eventuelle padding */
+}
+
+.burger {
+  display: none;
+}
+@media (max-with: 800px) {
+  /*  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .navbar a:hover {
+    color: #ea4335;
+  } */
+  .logo {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    padding: 30px;
+    color: #e30e0e;
+    font-size: 24opx;
+  }
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.navbar a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
 }
