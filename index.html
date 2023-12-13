@@ -9,13 +9,17 @@
     <!--links til stylesheet og layout-->
     <link rel="stylesheet" href="forside.css">
     <link rel="stylesheet" href="faelles_layout.css">
-    <!--google font-->
+    <!--faelles google font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
     <!--favicon/kan kun ses paa safari-->
     <!--side title i top menu-->
     <title>Forside</title>
@@ -32,37 +36,39 @@
         <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
         <div class="navbar" id="myNavbar">
             <a href="index.html">
-                <div class="logo"><img src="/img/pleasant_logo.webp" alt="Logo"></div>
+                <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
             </a>
-            <!-- <section>
-                <form action="">
-                    <input type="search" id="searchInput" placeholder="">
+            <div class="search-container">
+                <form action="" class="search-form">
+                    <input type="search" id="searchInput" placeholder="Søg">
                 </form>
-            </section> -->
-            <div class="links">
-                <a href=" shop.html">Shop</a>
-                <a href="/style/style.html">Style guide</a>
-                <a href="/vaerdier/vaerdier.html">Værdier</a>
+            </div>
+            <div class="navlinks">
+                <a href="kvinder.html">Shop</a>
+                <a href="style.html">Style guide</a>
+                <a href="vaerdier.html">Værdier</a>
                 <a href="stories.html">Stories</a>
             </div>
+
         </div>
     </header>
+
     <!------------------------------------------------------------------------------->
 
     <div class="surfboards">
         <img src="/img/forside_billeder/gallery/sunset_longboard_1.webp" alt="surf">
         <img src="/img/forside_billeder/gallery/sunset_longboard_2.webp" alt="surf">
     </div>
+
     <main>
-        <div class="overskrift">
-            <h2>“Tøj med god samvittighed”</h2>
+        <div class="title">
+            <h1>“Tøj med god samvittighed”</h1>
         </div>
         <section class="section1">
             <div class="grid1">
                 <p>Vi har taget en sund beslutning om ikke længere at købe nyt tekstil. Det har vi ikke gjort siden
-                    2021. Vi
-                    upcycler og laver tøj af genbrugstekstil. Det er en kæmpe miljøbesparelse, der giver os en god
-                    samvittighed vi gerne vil dele med dig.</p>
+                    2021. Vi upcycler og laver tøj af genbrugstekstil. Det er en kæmpe miljøbesparelse, der giver os en
+                    god samvittighed vi gerne vil dele med dig.</p>
             </div>
             <div class="badge1">
                 <img src="/img/forside_billeder/badge_upcycle.png" alt="">
@@ -70,17 +76,12 @@
         </section>
 
         <!------------------------------------------------------------------------------->
-        <a href="/shop/shop.html" class="underline">Shop all products</a>
-
-        <section class="shop1">
-            <img src="/img//forside_billeder/shop/drop-51.webp" alt="Cali shirt"></img>
-            <img src="/img/forside_billeder/shop/pleasant_upcycled_bali15.webp" alt="Oahu shirt"></img>
-            <img src="/img/forside_billeder/shop/elephantwhite2.webp" alt="T-shirt"></img>
-            <img src="/img/forside_billeder/shop/will_upcycled_baby.webp" alt="Oahu shirt"></img>
-        </Section>
-
-        <section class="shoptekst1">
+        <a href="shop.html" class="underline">
+            <h5>Shop all products</h5>
+        </a>
+        <section class="shopgrid">
             <div class="col">
+                <img src="/img//forside_billeder/shop/drop-51.webp" alt="Cali shirt"></img>
                 <h5>Upcycled</h5>
                 <h4>Cali shirt</h4>
                 <h5>Madrid</h5>
@@ -88,6 +89,7 @@
             </div>
 
             <div class="col">
+                <img src="/img/forside_billeder/shop/pleasant_upcycled_bali15.webp" alt="Oahu shirt"></img>
                 <h5>Upcycled</h5>
                 <h4>Oahu shirt</h4>
                 <h5>Garden</h5>
@@ -95,6 +97,7 @@
             </div>
 
             <div class="col">
+                <img src="/img/forside_billeder/shop/elephantwhite2.webp" alt="T-shirt"></img>
                 <h5>Elephant in the room</h5>
                 <h4>T-shirt</h4>
                 <h5>Off white</h5>
@@ -102,6 +105,7 @@
             </div>
 
             <div class="col">
+                <img src="/img/forside_billeder/shop/will_upcycled_baby.webp" alt="Oahu shirt"></img>
                 <h5>Upcycled</h5>
                 <h4>Will baby shirt</h4>
                 <h5>Multi</h5>
@@ -109,23 +113,17 @@
             </div>
         </section>
 
-        <section class="shop2">
-            <img src="/img//forside_billeder/californiafeelsupcycledshirt.webp" alt="Cali shirt"></img>
-            <img src="/img/forside_billeder/dropfebruar-51.webp" alt="Oahu shirt"></img>
-            <img src="/img/forside_billeder/buckethats-36.webp" alt="Bøllehat"></img>
-            <img src="/img/forside_billeder/1080-61.webp" alt="Cap"></img>
-        </section>
-
-        <section class="shoptekst2">
+        <section class="shopgrid2">
             <div class="col">
+                <img src="/img/forside_billeder/1080-61.webp" alt="Cap"></img>
                 <h5>Upcycled</h5>
-                <h4>Cali shirt</h4>
-                <h5>Flores</h5>
-                <dd>Dkk. 695,00</dd>
+                <h4>Cap</h4>
+                <h5>Grey</h5>
+                <dd>Dkk. 295,00</dd>
             </div>
 
-
             <div class="col">
+                <img src="/img/forside_billeder/dropfebruar-51.webp" alt="Oahu shirt"></img>
                 <h5>Upcycled</h5>
                 <h4>Oahu shirt</h4>
                 <h5>Teens</h5>
@@ -133,6 +131,7 @@
             </div>
 
             <div class="col">
+                <img src="/img/forside_billeder/buckethats-36.webp" alt="Bøllehat"></img>
                 <h5>Jungle</h5>
                 <h4>Hat</h4>
                 <h5>Green</h5>
@@ -140,16 +139,19 @@
             </div>
 
             <div class="col">
+                <img src="/img//forside_billeder/californiafeelsupcycledshirt.webp" alt="Cali shirt"></img>
                 <h5>Upcycled</h5>
-                <h4>Cap</h4>
-                <h5>Grey</h5>
-                <dd>Dkk. 295,00</dd>
+                <h4>Cali shirt</h4>
+                <h5>Flores</h5>
+                <dd>Dkk. 695,00</dd>
             </div>
         </section>
         <!------------------------------------------------------------------------------->
         <div class="surfer"><img src="/img/forside_billeder/13.webp" alt="Surf dude"></img></div>
         <!------------------------------------------------------------------------------->
-        <h3>Hvor finder du vores produkter?</h3>
+        <div class="tekst">
+            <h3>Hvor finder du vores produkter?</h3>
+        </div>
         <div class="logoer">
             <img src="/img/forside_billeder/logoer/retailer_logo_1.svg" alt="Urban Outfitters"></img>
             <img src="/img/forside_billeder/logoer/retailer_logo_7.svg" alt=""></img>
@@ -158,26 +160,27 @@
             <img src="/img/forside_billeder/logoer/retailer_logo_6.svg" alt="West wind"></img>
             <img src="/img/forside_billeder/logoer/retailer_logo_3.svg" alt="Lynæs"></img>
         </div>
-        </div>
+
         <!------------------------------------------------------------------------------->
         <section class="grid_1-1">
             <div class="col_2_1">
                 <h3>Hvorfor vælge Pleasant?</h3>
+                <br>
                 <p>Vi upcycler, cirkulerer og sælger vores produkter tidsløst.</p>
+                <br>
                 <p>Upcycling betyder, at tage et eksisterende tekstilprodukt og lave det om til et nyt af højere
                     værdi. Dette har nogle enorme miljø fordele:</p>
+                <br>
                 <ul>
                     <li>Min. 4 gange lavere CO2 udledning</li>
                     <li>Spar mindst 2.500 liter vand</li>
                     <li>Du støtter ikke nye bomuldsproduktioner</li>
                     <li>Du støtter indirekte humanitær velgørenhed</li>
                 </ul>
+                <a href="vaerdier.html" class="anden">Læs mere om upcycling</a>
             </div>
             <div>
                 <img src="/img/forside_billeder/img_0250.webp" alt="Butik Pleasant">
-            </div>
-
-            <div><a href="/vaerdier/vaerdier.html" class="anden">Læs mere om upcycling</a></div>
             </div>
         </section>
         <!------------------------------------------------------------------------------->
@@ -186,28 +189,31 @@
 
             <div class="col_2_2">
                 <h4>Samme pris året rundt - nej tak til udsalg</h4>
+
                 <p>Tøj skal sælges med respekt for ressourcerne og ansvar mod overforbrug. Som en komfort dykker vores
                     priser
                     aldrig, da vi sælger tidsløst uden udsalg.</p>
+                <br>
                 <h4>Stort udvalg af unika produkter</h4>
                 <p>Vi designer tøj udfra hvad vi finder af genbrugstekstil. Det resulterer i vidt forskellige produkter
-                    og
-                    ikke
-                    særligt mange af hver.</p>
+                    og ikke særligt mange af hver.</p>
+                <br>
                 <h4>Gør livet behageligt</h4>
                 <p>Vi gør livet behageligt med et sundt forhold til os selv, hinanden og vores planet. Læs mere om
-                    livsstil
-                    her
-                </p>
+                    livsstil her.</p>
             </div>
         </section>
-        <!------------------------------------------------------------------------------->
-        <h2>Explore our stories</h2>
-        <section class="row">
-            <div class="column">
+        <!---------------------------------- 3 COLUMNS--------------------------------------------->
+        <div class="tekst2">
+            <h3>Explore our stories</h3>
+        </div>
+        <section class="grid_3-1">
+            <div class="col_3_1">
                 <img src="/img/forside_billeder/liberty1.png" alt="">
                 <h5>Print event</h5>
+                <br>
                 <h2>Change culture not Climate recap</h2>
+                <br>
                 <h5>Print 04 “Change culture
                     not climate”. Thank you
                     to everyone who joined
@@ -216,59 +222,77 @@
                     enthusiasm and support.
                     Here are some photos
                     from the day....</h5>
-                <h6>READ MORE</h6>
+
+                <div><a href="stories_printevent.html" class="event">
+                        <h6>READ MORE</h6>
+                    </a></div>
             </div>
+            <!------------------------------------>
+            <div class="col_3_2">
+                <img src="/img/forside_billeder/anton_studio-96.webp" alt="">
+                <h5>A Pleasant time with</h5>
+                <br>
+                <h2>A Pleasant time with Anton</h2>
+                <br>
+                <h5>We are Pleasant, and we
+                    want to cultivate
+                    change. A structural
+                    change that respects
+                    nature and pleases
+                    people, and a cultural
+                    change that inspires us
+                    to live better and
+                    happier. With this in...</h5>
+                <br>
+                <div><a href="stories_time_with_you.html" class="event">
+                        <h6>READ MORE</h6>
+                    </a></div>
+            </div>
+            <!------------------------------------>
+            <!-- <div class="col_3_3">
+                <img src="/img/forside_billeder/roskilde.webp" alt="">
+                <h5>Roskilde festival!</h5>
+                <br>
+                <h2>Thank you, Roskilde Festival!</h2>
+                <br>
+                <h5>We just want to extend
+                    our gratitude to everyone
+                    who visited our pop-up
+                    shop at Roskilde Festival
+                    and made it a
+                    memorable one! 🙌🏼✨
+                    Your presence, support,
+                    and enthusiasm once...</h5>
+                <br>
+                <h6>READ MORE</h6>
+            </div> -->
+            <div class="col_3_3">
+                <img src="/img/forside_billeder/roskilde.webp" alt="">
+                <h5>Pleasant</h5>
+                <br>
+                <h2>How it all started</h2>
+                <br>
+                <h5>In 2008 two rookies went to
+                    the Philippines to produce t-shirts.
+                    While waiting for them to finish,
+                    we awkwardly tried to mirror the
+                    local surfers of a little tropical
+                    island. The lifestyle and attitude
+                    of this contrasting culture have
+                    slowly shaped the values of our brand.</h5>
+                <br>
+                <div><a href="stories_about.html" class="origin">
+                        <h6>READ MORE</h6>
+                    </a></div>
+            </div>
+
+
+
+
         </section>
 
-
-        <!-- <div class="row">
-            <div class="column">
-                <img src="imgswebp/side2_2/15_(2).webp" alt="Image 15" width="500" height="625">
-                <a href="infoside.html">
-                    <h2>The Bamboo Bungalow</h2>
-                </a>
-                <p class="image-text"> Explore cultural heritage sites from an eco-resort. Powered by renewable
-                    energy, this resort offers a responsible and eco-friendly stay that allows you to discover the
-                    region's rich cultural heritage while minimizing your environmental impact.</p>
- -->
-        <!------------------------------>
-
-        <div class="column">
-            <img src="/img/forside_billeder/anton_studio-96.webp" alt=""></img>
-            <h5>A Pleasant time with Anton</h5>
-            <h2>Change culture not Climate recap</h2>
-            <h5>We are Pleasant, and we
-                want to cultivate
-                change. A structural
-                change that respects
-                nature and pleases
-                people, and a cultural
-                change that inspires us
-                to live better and
-                happier. With this in...</h5>
-            <h6>READ MORE</h6>
-        </div>
-        </section>
-
-        <!------------------------------>
-
-        <div class="column">
-            <img src="/img/forside_billeder/roskilde.jpg" alt=""></img>
-            <h5>Roskilde festival!</h5>
-            <h2>Thanx you, Roskilde Festival!</h2>
-            <h5>We just want to extend
-                our gratitude to everyone
-                who visited our pop-up
-                shop at Roskilde Festival
-                and made it a
-                memorable one! 🙌🏼✨
-                Your presence, support,
-                and enthusiasm once...</h5>
-            <h6>READ MORE</h6>
-        </div>
-        </section>
     </main>
-    <!------------------------------------------------------------------------------->
+    <!----------------------------------BILLED GALLERY--------------------------------------------->
     <section class="gallery">
         <img class="billed1" src="/img/forside_billeder/gallery/1.JPG" alt=""></img>
         <img class="billed2" src="/img/forside_billeder/gallery/2.JPG" alt=""></img>
@@ -284,7 +308,7 @@
         <img class="billed12" src="/img/forside_billeder/gallery/12.JPG" alt=""></img>
     </section>
 
-    <!------------------------------------------------------------------------------->
+    <!------------------------------------FOOTER------------------------------------------->
     <footer>
         <div class="wrap_footer">
             <div class="footer_top">
@@ -349,8 +373,8 @@
         </div>
     </footer>
     <!------------------------------------------------------------------------------->
-    <script src="/index/forside.js"></script>
-    <script src="/faelles_javascript.js"></script>
+    <script src="index/forside.js"></script>
+    <script src="faelles_javascript.js"></script>
     <script src="javascript/login.js"></script>
 </body>
 
