@@ -2,7 +2,7 @@
 /* shift+option+a shortcut for starting a comment */
 /***************Reset/****************/
 * {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ img {
 /****** search ******/ /* nice to have */
 .search-container {
   position: absolute;
-  margin-top: 20%;
+  margin-top: -8%;
   margin-right: 86%;
 }
 
@@ -53,67 +53,6 @@ input[type="search"]:not(:placeholder-shown) {
   right: 0;
 }
 
-.slide-right {
-  width: 100%;
-  overflow: hidden;
-  background-color: #08408f;
-  width: 100%;
-  height: 5vh;
-  align-items: center;
-  justify-content: center;
-  color: aliceblue;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5px;
-  z-index: 99;
-}
-.slide-right p {
-  animation: 30s slide-right infinite;
-  font-size: 14px;
-  padding-top: 5px;
-}
-.navbar {
-  height: 400px;
-}
-@keyframes slide-right {
-  from {
-    margin-left: 0%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 100%;
-    width: 100%;
-  }
-}
-.logo {
-  width: 10%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-.navbar {
-  width: 100%;
-  height: auto;
-  background-color: #efece2;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 16px;
-}
-.navbar a {
-  justify-content: space-around;
-  color: #373232;
-  margin: 0 25px 25px 0;
-}
-a {
-  text-decoration: none; /* Remove underline */
-}
 /****** body ******/
 body {
   background-color: #f0efe9; /*********** ret fejl *********/
@@ -156,17 +95,20 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-gap: 10px; */
-  /*  padding: 30px;
-  /* margin-left: 500px; */
+  /*  padding: 30px;*/
+  margin-top: 80px;
 }
-.badge1 img {
+.badge1.img {
   align-items: center; /*********** ret fejl *********/
   padding: none;
+  position: absolute;
+  margin-top: 30%;
 }
 .badge1 {
   width: 220px;
   height: 220px;
   margin-left: 223px;
+  margin-top: -97px;
 }
 
 .grid1 p {
@@ -177,6 +119,9 @@ main {
 }
 
 /*********** shop link *********/
+.shop {
+  margin-top: 72px;
+}
 .underline {
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -281,6 +226,7 @@ dd {
 .col_2_1 .anden {
   /* background-color: #ef936cb6; */
   background-color: #d9d9d9;
+  background-size: 10px;
   border-radius: 5px;
   margin-left: 0px;
   /* color: #715f5f; */
@@ -290,7 +236,18 @@ dd {
 .anden {
   margin-top: 57px; /* Ændr denne værdi for at justere afstanden fra toppen */
   margin-left: 50px; /* Ændr denne værdi for at justere afstanden fra venstre side */
+  background-color: #ef936cb6;
+  color: #c7c7c7;
 }
+/* a {
+  color: #c7c7c7;
+  text-align: center;
+  padding: 7px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: transparent;
+} */
 
 .grid_2-1 {
   display: grid;
@@ -434,7 +391,7 @@ h2 h5 h6 {
   display: none;
 }
 @media (max-with: 800px) {
-  /*  .navbar {
+  .navbar {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -443,7 +400,7 @@ h2 h5 h6 {
   }
   .navbar a:hover {
     color: #ea4335;
-  } */
+  }
   .logo {
     width: 100%;
   }
@@ -451,72 +408,13 @@ h2 h5 h6 {
     display: block;
     position: absolute;
     right: 10px;
-    top: 80px;
+    top: 20px;
     padding: 30px;
-    color: #e30e0e;
-    font-size: 24opx;
+    color: #f6ebeb;
+    font-size: 24px;
   }
   .navbar.show {
     display: flex;
     flex-direction: column;
   }
-  .shopgrid,
-  .shopgrid2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .shopgrid,
-  .shopgrid2,
-  img {
-    padding-bottom: 16px;
-  }
-
-  .shopgrid .col,
-  .shopgrid2 .col {
-    width: 306px;
-    padding: 0px 16px 70px 0px;
-    gap: 50px;
-  }
-
-  .shopgrid h5,
-  dd {
-    font-size: 12px;
-    font-family: "plus jakarta sans";
-    color: #000000;
-  }
-  .shopgrid h4 {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: "plus jakarta sans";
-    color: #6c5857;
-  }
-  .shopgrid2 h5,
-  dd {
-    font-size: 12px;
-    font-family: "plus jakarta sans";
-    color: #000000;
-  }
-  .shopgrid2 h4 {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: "plus jakarta sans";
-    color: #715f5f;
-  }
-}
-.navbar {
-  width: 100%;
-  height: auto;
-  background-color: #efece2;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 16px;
-}
-.navbar a {
-  justify-content: space-around;
-  color: #373232;
-  margin: 0 25px 25px 0;
 }
