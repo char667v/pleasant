@@ -273,21 +273,43 @@ dd {
   grid-template-rows: 1fr;
   grid-gap: 50px;
   margin-bottom: 20px;
+  margin-left: -20px;
 }
 
 .col_3_1,
 .col_3_2,
+img {
+  width: 380px;
+  height: 25%;
+  padding: 50px 0px 20px 0px;
+}
+
 .col_3_3 img {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   padding: 100px 0px 20px 0px;
 }
+.col_3_1,
+.col_3_2,
+.col_3_3,
+h2 h5 h6 {
+  font-family: "plus jakarta sans";
+  font-size: 20px;
+}
+
+/* .col_3_1,
+.col_3_2,
+.col_3_3,
+.h2 {
+  font-style: italic; 
+}*/
 
 /************* billed gallery ************/
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 20px;
+  padding: 40px 0px 0px 0px;
 }
 .billed1 {
   grid-column: 1/2;
@@ -341,7 +363,7 @@ dd {
 .gallery img {
   height: 200px;
   /*  width: 360px; */
-  object-fit: cover;
+  /* object-fit: cover; */
   border: 2px solid grey; /* find en mere passende farve */
   margin: 0; /* Tilføjet for at fjerne eventuelle marginer */
   padding: 0; /* Tilføjet for at fjerne eventuelle padding */
