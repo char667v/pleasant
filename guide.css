@@ -52,6 +52,100 @@
   animation: animateFrames2 10s steps(1) infinite;
 }
 
+/*/////BALI GIF///*/
+@keyframes animateFrames3 {
+  0% {
+    background-image: url("img/style_billeder/bali_shirt_fold1.webp");
+  }
+  50% {
+    background-image: url("img/style_billeder/bali_shirt-fold2.jpg");
+  }
+  100% {
+    background-image: url("img/style_billeder/bali_shirt-fold3.webp");
+  }
+  100% {
+    background-image: url("img/style_billeder/bali_shirt-fold4.webp");
+  }
+  100% {
+    background-image: url("img/style_billeder/bali_shirt-fold5.jpg");
+  }
+}
+
+.section_3 .grid_3-2 .gif-bali1 {
+  width: 380px; /* Specify the width of your GIF container */
+  height: 100%; /* Specify the height of your GIF container */
+  background-size: cover;
+  animation: animateFrames3 10s infinite;
+}
+
+@keyframes animateFrames4 {
+  0% {
+    background-image: url("img/style_billeder/oahu_fit-1.webp");
+  }
+  50% {
+    background-image: url("img/style_billeder/oahu_fit-2.webp");
+  }
+  75% {
+    background-image: url("img/style_billeder/oahu_fit-3.webp");
+  }
+  100% {
+    background-image: url("img/style_billeder/oahu_fit-4.webp");
+  }
+}
+.section_3 .grid_3-4 .gif-bali2 {
+  width: 380px; /* Specify the width of your GIF container */
+  height: 100%; /* Specify the height of your GIF container */
+  background-size: cover;
+  animation: animateFrames4 10s steps(1) infinite;
+}
+
+/*/////CALI GIF///*/
+@keyframes animateFrames5 {
+  0% {
+    background-image: url("img/style_billeder/cali_shirt_fold1.jpg");
+  }
+  25% {
+    background-image: url("img/style_billeder/cali_shirt_fold2.webp");
+  }
+  50% {
+    background-image: url("img/style_billeder/cali_shirt_fold3.webp");
+  }
+  75% {
+    background-image: url("img/style_billeder/cali_shirt_fold4.webp");
+  }
+  100% {
+    background-image: url("img/style_billeder/cali_shirt_fold5.webp");
+  }
+}
+
+.section_3 .grid_3-2 .gif-cali1 {
+  width: 380px; /* Specify the width of your GIF container */
+  height: 100%; /* Specify the height of your GIF container */
+  background-size: cover;
+  animation: animateFrames5 10s infinite;
+}
+
+@keyframes animateFrames6 {
+  0% {
+    background-image: url("img/style_billeder/oahu_fit-1.webp");
+  }
+  50% {
+    background-image: url("img/style_billeder/oahu_fit-2.webp");
+  }
+  75% {
+    background-image: url("img/style_billeder/oahu_fit-3.webp");
+  }
+  100% {
+    background-image: url("img/style_billeder/oahu_fit-4.webp");
+  }
+}
+.section_3 .grid_3-4 .gif-cali2 {
+  width: 380px; /* Specify the width of your GIF container */
+  height: 100%; /* Specify the height of your GIF container */
+  background-size: cover;
+  animation: animateFrames6 10s steps(1) infinite;
+}
+
 button {
   display: block;
   background-color: #6c5857;
@@ -227,7 +321,7 @@ h4 {
 }
 
 .section_3 .grid_3-3 .materiale_img {
-  width: 320px;
+  width: 500px;
 }
 
 @keyframes slideFrames {
