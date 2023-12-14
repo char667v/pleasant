@@ -8,7 +8,6 @@
     <meta name="robots" content="noindex">
     <!--links til stylesheet og layout-->
     <link rel="stylesheet" href="forside.css">
-    <link rel="stylesheet" href="faelles_layout.css">
     <!--faelles google font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -20,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <!-- Tilføj Font Awesome-stilarket -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--favicon/kan kun ses paa safari-->
     <!--side title i top menu-->
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
@@ -31,14 +32,21 @@
 <body>
     <header>
         <header>
-            <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
+            <div class="slide-right">
+                <p>1-3dages levering / Gratis fragt over 300 DKK / Cirkulær forsendelsesemballage tilgængelig </p>
             </div>
-            <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
-            <div class="navbar" id="myNavbar">
-                <a href="index.html">
-                    <div class="logo"><img src="img/pleasant_logo.webp" alt="Logo"></div>
-                </a>
-                <a href="shop.html">Shop</a>
+            <div class="background">
+                <div class="logo">
+                    <a href="index.html"> <!-- ændre linkets navn -->
+                        <img src="/img/pleasant_logo.webp" alt="home botton">
+                    </a>
+                </div>
+            </div>
+
+            <!--  <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+            <div class="navbar" id="myNavbar">-->
+            <div class="navlinks">
+                <a href="kvinder.html">Shop</a>
                 <a href="style.html">Style guide</a>
                 <a href="vaerdier.html">Værdier</a>
                 <a href="stories.html">Stories</a>
@@ -47,8 +55,10 @@
             <div class="search-container">
                 <form action="" class="search-form">
                     <input type="search" id="searchInput" placeholder="Søg">
+                    <button type="submit" id="searchButton"><i class="fas fa-search"></i></button>
                 </form>
             </div>
+
         </header>
 
         <!------------------------------------------------------------------------------->
@@ -62,16 +72,15 @@
             <div class="title">
                 <h1>“Tøj med god samvittighed”</h1>
             </div>
-            <section class="section1">
-                <div class="grid1">
-                    <div>
-                        <p>Vi har taget en sund beslutning om ikke længere at købe nyt tekstil. Det har vi ikke gjort
-                            siden
-                            2021. Vi upcycler og laver tøj af genbrugstekstil. Det er en kæmpe miljøbesparelse, der
-                            giver os
-                            en
-                            god samvittighed vi gerne vil dele med dig.</p>
-                    </div>
+            <section class="section">
+                <div class="tekst">
+                    <p>Vi har taget en sund beslutning om ikke længere at købe nyt tekstil. Det har vi ikke gjort
+                        siden
+                        2021. Vi upcycler og laver tøj af genbrugstekstil. Det er en kæmpe miljøbesparelse, der
+                        giver os
+                        en
+                        god samvittighed vi gerne vil dele med dig.</p>
+                </div>
                 </div>
                 <div class="badge1">
                     <img src="/img/forside_billeder/badge_upcycle.png" alt="">
@@ -381,8 +390,6 @@
         <!------------------------------------------------------------------------------->
         <script src="login.js"></script>
         <script src="stories.js"></script>
-
-
 </body>
 
 </html>
