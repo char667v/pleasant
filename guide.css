@@ -6,7 +6,18 @@
 .logo {
   margin-bottom: 10px;
 }
-
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
 .navbar .kategorier {
   top: 10px;
 }
