@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -13,25 +14,27 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Playfair Display, serif;
 }
+
+main {
+  max-width: 1100px;
+  margin: 0 auto 0 auto;
+}
+
+/****************hvvvvg*****/
 
 .image_strand {
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.img_timeglas {
-  float: right;
-  margin: 0px 0px 15px 15px;
-}
-
-.img_unicorn {
+/* Style for images with float classes */
+.float_right,
+.float_left {
   float: left;
-  margin: 0px 0px 15px 15px;
-}
-
-.float_right {
-  float: left;
-  width: 200px;
+  max-width: 50%;
+  height: auto;
 }
 
 .container {
@@ -53,56 +56,37 @@ body {
   padding: 10px;
 }
 
+/* style.css */
+
 .faq-answer {
   display: none;
-  padding: 10px;
   margin-bottom: 15px; /* Add margin between the answer and the next question */
+  padding-left: 34px;
 }
 
 /************black lines*******/
 
 .container_2 {
-  display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: space-around;
-  text-align: left;
+  display: block;
 }
 
-.paragraph {
-  flex: 1;
-  width: 47%; /* Adjust the width based on your design */
+.paragraph_1,
+.paragraph_2,
+.paragraph_3 {
+  width: 100%; /* Default to full width */
   padding: 10px;
-  margin: 1px;
+  margin: 10px;
   background-color: #d9d9d9;
 }
 
 .container img {
-  max-width: 60px;
-}
-
-@media only screen and (min-width: 601px) {
-  .container_2 {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: space-around;
-    text-align: left;
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  .paragraph {
-    flex: 1;
-    width: 47%; /* Adjust the width based on your design */
-    padding: 20px;
-    margin: 5px;
-  }
+  padding-right: 20px;
 }
 
 /* Add some styles for the header */
 header {
   background-color: #08408f;
   color: #fff;
-  padding: 10px;
 }
 
 /* Style for h1 tag */
@@ -113,12 +97,15 @@ h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 2em;
   padding-left: 30px;
   padding-bottom: 20px;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h4 {
@@ -129,13 +116,6 @@ h4 {
 /* Styling for .container */
 .container {
   padding: 20px;
-}
-
-/* Style for images with float classes */
-.float_right,
-.float_left {
-  max-width: 50%;
-  height: auto;
 }
 
 /* Add some styling for paragraphs */
@@ -174,28 +154,11 @@ h4 {
   padding-right: 10px;
 }
 
-@media only screen and (min-width: 601px) {
-  .container_2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: left;
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  .paragraph {
-    flex: 1;
-    width: 47%;
-    padding: 20px;
-    margin: 5px;
-  }
-}
-
 @media only screen and (min-width: 701px) {
   .faq-container {
     display: flex;
     flex-direction: row;
+    align-content: center;
   }
 
   .faq_1-5 {
@@ -218,5 +181,702 @@ h4 {
     font-size: 2em;
     padding-left: 70px;
     padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .paragraph {
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .paragraph {
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+/************HVAD SKER DER fra HER*********/
+
+@media only screen and (min-width: 800px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+  .paragraph_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_3 {
+    grid-column: span 1;
+    grid-row: span 2; /* Takes up 2 rows */
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+  .paragraph_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_3 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 1;
+  }
+}
+
+/************HVAD SKER DER HERTIL*******/
+
+/*****************NYT ER IKKE FRA FOER PROBLEMER*********/
+/**********eget*****/
+
+/***********TABLET*******/
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+
+  .paragraph_1,
+  .paragraph_2,
+  .paragraph_3 {
+    width: 100%; /* Default to full width */
+    padding: 10px;
+    margin: 1px;
+    background-color: #d9d9d9;
+  }
+
+  .paragraph_3 {
+    grid-column: span 2; /* Takes up 2 columns */
+    grid-row: span 1;
+  }
+}
+
+/********TABLET*********/
+
+@media only screen and (min-width: 800px) {
+  .container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto; /* Default to auto rows */
+    gap: 10px; /* Adjust the gap based on your design */
+    text-align: left;
+  }
+
+  .paragraph_1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .paragraph_3 {
+    grid-column: span 1;
+    grid-row: span 2; /* Takes up 2 rows */
+  }
+}
+
+/* Your existing CSS code */
+
+/* ... (other styles within the media query) */
+
+/***************FAELLES - findes ikke i før github*********/
+
+/*************** header ****************/
+
+/****** search ******/
+input[type="search"] {
+  float: right;
+  color: black;
+  margin-top: 2%;
+  width: 70px;
+  padding: 8px 20px 8px 45px;
+  border: #000 solid 2px;
+  font-size: 18px;
+  border-radius: 25px;
+  background-position: 2% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 10px;
+  background-image: url(img/—Pngtree—search\ icon_4699282.png);
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+  filter: brightness(170%);
+}
+
+input[type="search"]:focus,
+input[type="search"]:not(:placeholder-shown) {
+  width: 350px;
+  background-color: #fff;
+  filter: brightness(100%);
+}
+/* input[type="search"]::placeholder {
+  color: black;
+} */
+
+/************NYT DET HEE-JIN HAVDE PROBLEMER MED GITHUB *************/
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+.logo img {
+  width: 140px;
+}
+
+.logo {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Mobile-first styles */
+.float_left,
+.float_right {
+  width: 100%; /* Initial width for small screens */
+  max-width: 60px; /* Maximum width for the image */
+  height: auto;
+  float: left;
+  margin: 0px 0px 15px 15px;
+  transition: max-width 0.5s ease, width 0.5s ease; /* Smooth transition for both max-width and width */
+}
+
+@media screen and (min-width: 450px) {
+  .float_left,
+  .float_right {
+    width: 100%; /* Initial width for small screens */
+    max-width: 80px; /* Maximum width for the image */
+    height: auto;
+    float: left;
+    margin: 0px 0px 15px 15px;
+    transition: max-width 0.5s ease, width 0.5s ease; /* Smooth transition for both max-width and width */
+  }
+
+  .float_right {
+    width: 100%; /* Initial width for small screens */
+    max-width: 80px; /* Maximum width for the image */
+    height: auto;
+    float: right;
+    margin: 0px 0px 15px 15px;
+    transition: max-width 0.5s ease, width 0.5s ease; /* Smooth transition for both max-width and width */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .float_left {
+    width: 30vw; /* Adjust width for larger screens */
+    max-width: 300px; /* Adjust maximum width for larger screens */
+    float: left;
+  }
+  .float_right {
+    width: 30vw; /* Adjust width for larger screens */
+    max-width: 300px; /* Adjust maximum width for larger screens */
+    float: right;
+  }
+
+  .blad_ikon {
+    max-width: 220px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .float_left {
+    width: 20vw; /* Further adjust width for even larger screens */
+    max-width: 500px; /* Adjust maximum width for even larger screens */
+    float: left;
+  }
+
+  .float_right {
+    width: 20vw; /* Further adjust width for even larger screens */
+    max-width: 500px; /* Adjust maximum width for even larger screens */
+    float: right;
+  }
+  .blad_ikon {
+    max-width: 220px;
+  }
+
+  .recycling_ikon {
+    min-width: 300px;
+  }
+}
+
+/* Your existing CSS */
+
+/* Responsive scaling for SVGs */
+.svg-container {
+  width: 100%; /* Make the container take up the full width of its parent */
+}
+
+.svg-container svg {
+  width: 100%; /* Make the SVG take up 100% of the container's width */
+  height: auto; /* Maintain the aspect ratio and adjust the height accordingly */
+}
+
+/* Additional styling as needed */
+
+/* Further media query adjustments for even larger screens if
+
+
+/********FAQ QUESTON ARROWS********/
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.question {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  margin-right: 10px;
+}
+
+.down {
+  border-color: #333 transparent transparent transparent;
+}
+
+.answer {
+  padding: 10px;
+  display: none;
+}
+
+main .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background: none;
+  left: -30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggle-button img {
+  width: 30px; /* Adjust the width of the image */
+}
+
+.toggle-button.active {
+  transform: rotate(180deg);
+}
+
+.hiddentext {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.visible {
+  max-height: 100px; /* Adjust the max-height as per your design */
+}
+
+/* style.css */
+
+/* style.css */
+
+/* style.css */
+
+.faq-question .arrow + h3 {
+  display: inline-block;
+}
+
+/**********FOOOTER*****************/
+
+footer {
+  background-color: #172b85;
+  width: 100%;
+  height: auto;
+}
+
+.footer_top {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  line-height: 25px;
+  place-content: left;
+}
+.pleasant_footer img {
+  padding-left: 20px;
+}
+.socialnet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 20%;
+  height: auto;
+  justify-content: flex-start;
+}
+.butik,
+.links,
+.email {
+  display: flex;
+  flex-direction: column;
+  place-content: left;
+  padding: 10px;
+}
+
+.email {
+  place-content: left;
+  align-items: flex-start;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_bottom_left {
+  display: flex;
+}
+
+.payment_icons {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 959px) {
+  .footer_top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #efece2;
+    line-height: 25px;
+    padding: 4vw;
+    gap: 20px;
+  }
+  .pleasant_footer img {
+    padding: 0;
+    align-items: first baseline;
+    display: flex;
+    width: 40%;
+    height: auto;
+    display: block;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    flex-flow: wrap;
+  }
+  .socialnet {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 20%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .butik {
+    grid-column: 2/3;
+    padding-top: 5vh;
+    padding-left: 5vh;
+  }
+  .links {
+    grid-column: 3/4;
+    line-height: 35px;
+    padding-top: 5vh;
+    padding-left: 5vh;
+  }
+  .email {
+    grid-column: 4/5;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    place-items: center;
+    display: flex;
+  }
+  .footer_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .footer_bottom_left {
+    grid-column: 1/2;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #efece2;
+    padding-left: 4vw;
+  }
+  .footer_bottom_right {
+    grid-column: 2/4;
+    padding-bottom: 30px;
+  }
+  .payment_icons {
+    display: flex;
+    grid-column: 3/4;
+    flex-direction: row;
+    width: 30%;
+    gap: 10px;
+    align-items: flex-end;
+    padding-left: 3vw;
+  }
+
+  /* Add this to your existing CSS or create new styles */
+
+  .butik .faq-question,
+  .links .faq-question {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+
+  .butik .arrow,
+  .links .arrow {
+    border: solid #f5f5f5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 10px;
+  }
+
+  .butik h3,
+  .links h3 {
+    display: inline-block;
+  }
+
+  .butik .faq-answer,
+  .links .faq-answer {
+    display: none;
+    margin-bottom: 15px;
+    padding-left: 34px;
+  }
+
+  footer .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+}
+
+/********BURGER*****/
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  padding-left: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.logo img {
+  width: 180px;
+  justify-content: left;
+}
+.menu {
+  display: flex;
+  background-color: #efece2;
+}
+.menu li {
+  padding-left: 30px;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+}
+
+.menu ul {
+  padding-left: 40px;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #efece2;
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+@media (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #efece2;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
   }
 }
