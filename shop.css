@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 5vw;
+}
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  background-color: #08408f;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.slide-right p {
+  animation: 30s slide-right infinite;
+}
+/* Style for the burger menu button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu a a:hover {
+  color: #ea4335;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Style for the menu when it's hidden */
+.menu {
+  display: none;
+}
+
+/* Style for the menu when it's visible */
+.menu.active {
+  display: block;
+}
+
+.menu ol {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+.categori {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.categori:hover .dropdown-content {
+  display: block;
+}
+
+.categori:hover .dropbtn {
+  background-color: #50bf97;
+}
+p {
+  font-family: "Playfair Display", serif;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+h1 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  background-color: #efece2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.menu a {
+  justify-content: space-around;
+  color: #373232;
+  margin: 0 25px 25px 0;
+  font-family: "Playfair Display", serif;
+}
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.skjorter_billede {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-top: 10px;
+  align-self: center;
+}
+
+.container_hjem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container_hjem a {
+  text-decoration: none;
+
+  font-size: 20px;
+  color: #373232;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: Playfair Display, serif;
+}
+
+.h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.badge {
+  width: 90px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding: 50px;
+}
+
+.grid a {
+  text-decoration: underline;
+  color: #373232;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+}
+.billede_2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.grid img {
+  display: block;
+}
+
+.tekst_left,
+.tekst_right {
+  display: block;
+  font-size: 15px;
+}
+
+.grid h1 {
+  text-align: start;
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+.grid p {
+  font-family: "Playfair Display", serif;
+  font-size: large;
+  line-height: 40px;
+}
+.burger {
+  display: none;
+}
+.grid_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  font-family: Playfair Display, serif;
+}
+
+.grid_2 img {
+  width: 50%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 20px;
+}
+
+.grid_2 .item {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.grid_2 p {
+  padding-left: 15px;
+  font-family: Playfair Display, serif;
+}
+
+footer {
+  background-color: #172b85;
+  width: 100%;
+  height: auto;
+}
+.footer_top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  line-height: 25px;
+  padding: 4vw;
+  gap: 20px;
+}
+.pleasant_footer img {
+  padding: 0;
+  align-items: first baseline;
+  display: flex;
+  width: 40%;
+  height: auto;
+  display: block;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  flex-flow: wrap;
+}
+.socialnet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 20%;
+  height: auto;
+  justify-content: flex-start;
+}
+.butik {
+  grid-column: 2/3;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.links {
+  grid-column: 3/4;
+  line-height: 35px;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+.email {
+  grid-column: 4/5;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  place-items: center;
+  display: flex;
+}
+.footer_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.footer_bottom_left {
+  grid-column: 1/2;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #efece2;
+  padding-left: 4vw;
+}
+.footer_bottom_right {
+  grid-column: 2/4;
+  padding-bottom: 30px;
+}
+.payment_icons {
+  display: flex;
+  grid-column: 3/4;
+  flex-direction: row;
+  width: 30%;
+  gap: 10px;
+  align-items: flex-end;
+  padding-left: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .grid_2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_bottom_left {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
