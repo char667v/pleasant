@@ -15,24 +15,21 @@ main {
   margin-inline: auto;
 }
 .slide-right {
-  width: 100%;
   overflow: hidden;
   background-color: #08408f;
   width: 100%;
   height: 5vh;
-  align-items: center;
-  justify-content: center;
   color: aliceblue;
   align-items: center;
   justify-content: center;
   padding-top: 5px;
-  justify-items: center;
-  display: grid;
 }
 .slide-right p {
   animation: 30s slide-right infinite;
   font-size: 14px;
-  padding-top: 5px;
+  padding-top: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 @keyframes slide-right {
@@ -1292,9 +1289,9 @@ button:hover {
     justify-content: flex-start;
   }
   .slide-right p {
-    animation: 20s slide-right infinite;
-    font-size: 9px;
-    padding-top: 5px;
+    animation: 30s slide-right infinite;
+    font-size: 12px;
+    padding-top: 3px;
   }
   .print3 p,
   .digt {
